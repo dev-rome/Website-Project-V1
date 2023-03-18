@@ -1,20 +1,21 @@
 import Button from "../Button";
 
-function NavItems() {
+function NavItems({ onClick }) {
   return (
     <>
       <ul className="flex items-center">
         {[
-          ["What we do", "/what we do"],
-          ["Our clients", "/our clients"],
-          ["How it works", "/how it works"],
-          ["About us", "/about us"],
-          ["Contact", "/contact"],
-        ].map(([title, url]) => (
+          ["What we do", "#company"],
+          ["Our clients", "#clients"],
+          ["How it works", "#steps"],
+          ["About us", "#about"],
+          ["Contact", "#contact"],
+        ].map(([title, id]) => (
           <li key={title} className="mr-[4.375rem] last-of-type:mr-[3.125rem]">
             <a
-              href={url}
+              href={id}
               className="tracking-widest font-sans-serif font-semibold hover:bg-hover-gradient hover:bg-clip-text hover:text-transparent"
+              onClick={onClick}
             >
               {title}
             </a>
