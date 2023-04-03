@@ -44,7 +44,7 @@ function StepFour() {
         </svg>
       </div>
       <p className="mt-10">
-        Our partnership doesn’t stop here!Stay in touch to review previous
+        Our partnership doesn’t stop here! Stay in touch to review previous
         projects, share your thoughts with us, or bring a new idea to life!
       </p>
       <div className="absolute -bottom-8 left-2/4 -translate-x-2/4">
