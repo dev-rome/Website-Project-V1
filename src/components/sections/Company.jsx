@@ -1,0 +1,76 @@
+import { useState, useEffect } from "react";
+import Globe from "/images/globe.gif";
+import Dev from "/images/dev.gif";
+import Percent from "/images/percent.gif";
+import SectionContainer from "./SectionContainer";
+
+function Company() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [currentText, setCurrentText] = useState(0);
+
+  const images = [
+    <img className="w-full h-full object-cover" src={Globe} alt={"Globe"} />,
+    <img className="w-full h-full object-cover" src={Dev} alt={"Dev"} />,
+    <img
+      className="w-full h-full object-cover"
+      src={Percent}
+      alt={"Percent"}
+    />,
+  ];
+
+  const imageDescriptions = [
+    "Near shore means same time zone",
+    "100% the right skillset for your business",
+    "Of our clients return to work with us",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((currentImage) => (currentImage + 1) % images.length);
+      setCurrentText(
+        (currentText) => (currentText + 1) % imageDescriptions.length
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <SectionContainer className="pt-8 lg:pt-16" id="company">
+      <div className="max-w-5xl mx-auto px-4 lg:px-0">
+        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
+          Crafting tailored teams for your business needs
+        </h2>
+        <div className="grid lg:grid-cols-11">
+          <div className="lg:col-span-6 lg:border-r-4 lg:border-black lg:mt-16 lg:pr-16">
+            <p className="font-roboto">
+              We help businesses like yours achieve their goals through software
+              improvements. We support the strategic implementation of software
+              solutions by working with teams of skilled software developers
+              from Central and South America.
+            </p>
+            <h3 className="font-roboto font-extrabold text-lg lg:text-xl text-black mt-8 lg:mt-16">
+              Why nearshore?
+            </h3>
+            <p className="font-roboto mt-2 lg:mt-3">
+              The best team with the skillset you need could be anywhere. That’s
+              why expanding our search while also taking into account your
+              budget needs and timezone leads us to Latin America.
+            </p>
+          </div>
+          <div className="lg:col-span-4 lg:pl-8">
+            <div className="grid lg:grid-cols-6 place-items-center">
+              <div className="w-[215px] h-[215px] lg:col-span-6 mt-4 lg:mt-14 mb-9">
+                {images[currentImage]}
+              </div>
+            </div>
+            <p className="lg:row-start-2 col-span-4 font-zwodrei font-bold text-2xl">
+              {imageDescriptions[currentText]}
+            </p>
+          </div>
+        </div>
+      </div>
+    </SectionContainer>
+  );
+}
+
+export default Company;
