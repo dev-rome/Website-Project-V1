@@ -21,9 +21,11 @@ function Clients() {
             <div className="lg:grid lg:grid-cols-3">
               <img src={StaplesRed} alt="Staples Red" />
               <div className="lg:col-start-5">
-                <p className="font-roboto text-lg">Staffing Augmentation</p>
-                <p className="font-roboto text-lg">3 Month Project</p>
-                <p className="font-roboto text-lg">Team size</p>
+                <ul>
+                  <li className="font-roboto text-lg">Staffing Augmentation</li>
+                  <li className="font-roboto text-lg">3 Month Project</li>
+                  <li className="font-roboto text-lg">Team size</li>
+                </ul>
               </div>
             </div>
             <div className=" lg:col-span-11">
