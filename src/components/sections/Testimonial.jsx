@@ -26,11 +26,11 @@ function Testimonial() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto lg:pt-28 px-4 lg:px-0">
-      <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)] lg:mb-12">
+    <div className="max-w-5xl mx-auto pt-24 lg:pt-28 px-4 lg:px-0">
+      <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
         In their words...
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6 lg:mt-12">
         {testimonials.map((testimonial) => (
             <TestimonialItem testimonial={testimonial} />
         ))}

@@ -42,7 +42,7 @@ function Company() {
         </h2>
         <div className="grid lg:grid-cols-11">
           <div className="lg:col-span-6 lg:border-r-4 lg:border-black lg:mt-16 lg:pr-16">
-            <p className="font-roboto">
+            <p className="font-roboto mt-7">
               We help businesses like yours achieve their goals through software
               improvements. We support the strategic implementation of software
               solutions by working with teams of skilled software developers
@@ -59,11 +59,11 @@ function Company() {
           </div>
           <div className="lg:col-span-4 lg:pl-8">
             <div className="grid lg:grid-cols-6 place-items-center">
-              <div className="w-[215px] h-[215px] lg:col-span-6 mt-4 lg:mt-14 mb-9">
+              <div className="w-[215px] h-[215px] lg:col-span-6 mt-4 lg:mt-14">
                 {images[currentImage]}
               </div>
             </div>
-            <p className="lg:row-start-2 col-span-4 font-zwodrei font-bold text-2xl">
+            <p className="lg:row-start-2 col-span-4 font-zwodrei font-bold text-[1.375rem] lg:text-2xl mt-5 lg:mt-9">
               {imageDescriptions[currentText]}
             </p>
           </div>

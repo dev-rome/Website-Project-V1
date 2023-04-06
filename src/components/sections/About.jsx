@@ -6,13 +6,13 @@ import SectionContainer from "./SectionContainer";
 
 function About() {
   return (
-    <SectionContainer className="lg:pt-48" id="about">
+    <SectionContainer className="pt-20 lg:pt-48" id="about">
       <div className="max-w-5xl mx-auto px-4 lg:px-0">
         <div className="grid lg:grid-cols-11">
           <div className="lg:col-span-5">
-            <div className="grid lg:grid-cols-5">
-              <img className="col-span-5" src={Logo} alt="Timber & Hatchet" />
-              <p className="lg:row-start-2 lg:col-span-5 font-roboto mt-4">
+            <div className="grid grid-cols-4 lg:grid-cols-5">
+              <img className="col-span-4 lg:col-span-5" src={Logo} alt="Timber & Hatchet" />
+              <p className="col-span-4 row-start-2 lg:col-span-5 font-roboto mt-4">
                 Timber and Hatchet was founded in 2017 by Diego having a
                 software development background and cross-industry experience.
                 He was able to build Timber & Hatchet to able to curate a team
@@ -22,18 +22,18 @@ function About() {
             </div>
           </div>
           <div className="lg:col-start-8">
-            <div className="grid lg:grid-cols-1 lg:gap-y-20">
+            <div className="grid grid-cols-5 lg:grid-cols-1 gap-y-14 lg:gap-y-20 mt-11 md:mt-0">
               <div className="flex items-center gap-2 lg:pt-24">
                 <img src={Support} alt="Support" />
                 <p className="font-zwodrei font-bold text-2xl">Support</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="row-start-2 flex items-center gap-2">
                 <img src={Collaboration} alt="Collaboration" />
                 <p className=" font-zwodrei font-bold text-2xl">
                   Collaboration
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="row-start-3 flex items-center gap-2">
                 <img src={Transparency} alt="Transparency" />
                 <p className=" font-zwodrei font-bold text-2xl">Transparency</p>
               </div>

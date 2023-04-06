@@ -7,20 +7,20 @@ import Button from "../Button";
 
 function Clients() {
   return (
-    <SectionContainer className="lg:pt-48" id="clients">
+    <SectionContainer className="pt-20 lg:pt-48" id="clients">
       <div className="max-w-5xl mx-auto px-4 lg:px-0">
-        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)] lg:mb-12">
+        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
           Working with great leaders
         </h2>
-        <div className="grid lg:grid-cols-11">
-          <div className="lg:row-start-1 lg:col-span-2 lg:flex items-start lg:gap-2 lg:pr-3">
+        <div className="grid lg:grid-cols-11 mt-6 lg:mt-12">
+          <div className="col-span-2 lg:row-start-1 lg:col-span-2 flex gap-3 lg:items-start lg:gap-2 lg:pr-3">
             <img src={Staples} alt="Staples" />
             <img src={ZipCar} alt="Zipcar" />
           </div>
           <div className="lg:col-start-5 col-span-7 lg:border-l-4 lg:border-black lg:pl-4">
-            <div className="lg:grid lg:grid-cols-3">
+            <div className="grid grid-cols-5 lg:grid-cols-3 mt-5 md:mt-0">
               <img src={StaplesRed} alt="Staples Red" />
-              <div className="lg:col-start-5">
+              <div className="col-start-4 col-span-3 lg:col-start-5">
                 <ul>
                   <li className="font-roboto text-lg">Staffing Augmentation</li>
                   <li className="font-roboto text-lg">3 Month Project</li>

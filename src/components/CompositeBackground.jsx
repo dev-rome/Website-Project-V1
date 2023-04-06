@@ -11,15 +11,15 @@ function CompositeBackground() {
     <>
       <div className="absolute inset-0 bg-hero-background bg-no-repeat bg-cover bg-center bg-blend-multiply"></div>
       <div className="absolute right-0 bottom-0 opacity-80">
-        <Image src={Tech} width={375} alt={"Tech Pattern"} />
+        <img className="w-64 md:w-80 lg:w-96" src={Tech} alt="Tech Pattern" />
       </div>
       <div className="absolute left-0 bottom-0 opacity-40">
-        <Image src={TreeOne} width={350} alt={"Trees"} />
+        <img className="w-64" src={TreeOne} alt="Trees" />
       </div>
       <div className="absolute left-[225px] bottom-0 opacity-40">
-        <Image src={TreeTwo} width={550} alt={"Trees"} />
+        <img className="w-96" src={TreeTwo} alt="Trees" />
       </div>
-      <div className="absolute left-[600px] bottom-0 opacity-40">
+      {/* <div className="hidden md:block absolute left-[600px] bottom-0 opacity-40">
         <Image src={TreeThree} width={500} alt={"Trees"} />
       </div>
       <div className="absolute left-[950px] bottom-0 opacity-40">
@@ -27,7 +27,7 @@ function CompositeBackground() {
       </div>
       <div className="absolute left-[1050px] bottom-0 opacity-40">
         <Image src={TreeFive} width={400} alt={"Trees"} />
-      </div>
+      </div> */}
     </>
   );
 }
