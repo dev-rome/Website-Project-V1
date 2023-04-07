@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import Logo from "/images/timber-hatchet-logo.png";
 import Image from "../Image";
 import NavItem from "./NavItem";
@@ -20,9 +21,12 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full flex justify-between py-[0.625rem] pl-3 pr-[4.375rem] bg-white/10 backdrop-filter backdrop-blur-sm">
+    <nav className="fixed left-0 top-0 z-50 w-full flex justify-between py-[0.625rem] xl:pl-3 pr-10 xl:pr-[4.375rem] bg-white/10 backdrop-filter backdrop-blur-sm">
       <Image src={Logo} width={225} height={80} alt={"Timber & Hatchet Logo"} />
-      <ul className="flex items-center">
+      <Button className="block xl:hidden">
+        <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
+      </Button>
+      <ul className="hidden xl:flex items-center">
         {items.map(({ title, href }) => {
           return (
             <NavItem
