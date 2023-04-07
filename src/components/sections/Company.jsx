@@ -36,12 +36,12 @@ function Company() {
 
   return (
     <SectionContainer className="pt-8 lg:pt-16" id="company">
-      <div className="max-w-5xl mx-auto px-4 lg:px-0">
+      <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
           Crafting tailored teams for your business needs
         </h2>
-        <div className="grid lg:grid-cols-11">
-          <div className="lg:col-span-6 lg:border-r-4 lg:border-black lg:mt-16 lg:pr-16">
+        <div className="grid md:grid-cols-8 lg:grid-cols-11 md:mt-8 lg:mt-0">
+          <div className="md:col-span-4 lg:col-span-6 md:border-r-4 md:border-black md:pr-8 md:mt-4 lg:mt-16">
             <p className="font-roboto mt-7">
               We help businesses like yours achieve their goals through software
               improvements. We support the strategic implementation of software
@@ -57,13 +57,13 @@ function Company() {
               budget needs and timezone leads us to Latin America.
             </p>
           </div>
-          <div className="lg:col-span-4 lg:pl-8">
+          <div className="md:col-span-3 md:col-start-5 lg:col-span-4 md:pl-8">
             <div className="grid lg:grid-cols-6 place-items-center">
-              <div className="w-[215px] h-[215px] lg:col-span-6 mt-4 lg:mt-14">
+              <div className="w-[13.438rem] h-[13.438rem] lg:col-span-6 mt-4 md:mt-7 lg:mt-14">
                 {images[currentImage]}
               </div>
             </div>
-            <p className="lg:row-start-2 col-span-4 font-zwodrei font-bold text-[1.375rem] lg:text-2xl mt-5 lg:mt-9">
+            <p className="md:max-w-xs sm:col-start-3 font-zwodrei font-bold text-[1.375rem] lg:text-2xl mt-5 lg:mt-9">
               {imageDescriptions[currentText]}
             </p>
           </div>

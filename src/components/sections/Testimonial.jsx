@@ -30,9 +30,9 @@ function Testimonial() {
       <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
         In their words...
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6 lg:mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 lg:mt-12">
         {testimonials.map((testimonial) => (
-            <TestimonialItem testimonial={testimonial} />
+          <TestimonialItem testimonial={testimonial} />
         ))}
       </div>
     </div>

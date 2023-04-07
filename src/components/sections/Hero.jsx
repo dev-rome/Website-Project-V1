@@ -18,7 +18,7 @@ function Hero() {
     >
       <CompositeBackground />
       <div className="absolute pl-4 lg:pl-[3.25rem]">
-        <h1 className="max-w-lg md:max-w-3xl font-zwodrei font-bold text-[2.40rem] md:text-6xl leading-10 text-[#393939]">
+        <h1 className="max-w-lg md:max-w-3xl font-zwodrei font-bold text-[2.40rem] md:text-5xl lg:text-6xl leading-10 text-[#393939]">
           Strong connections lead to sustainable products
         </h1>
         <p className="max-w-md mt-6 md:mt-4 font-roboto font-extrabold text-xl tracking-widest text-white">

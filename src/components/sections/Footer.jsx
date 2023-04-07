@@ -24,12 +24,12 @@ function Footer() {
         </div>
         <div className="row-span-4 sm:col-start-2 col-span-4 md:row-start-1 md:col-start-3 lg:row-span-4 lg:col-span-3">
           <ul className="mt-4 sm:mt-2">
-            <li className="text-sm sm:text-base">Contact us</li>
-            <li className="text-sm sm:text-base">Email: Info@Timber.io</li>
-            <li className="text-sm sm:text-base">Phone: (123)456-7890</li>
+            <li className="font-roboto text-sm sm:text-base">Contact us</li>
+            <li className="font-roboto text-sm sm:text-base">Email: Info@Timber.io</li>
+            <li className="font-roboto text-sm sm:text-base">Phone: (123)456-7890</li>
           </ul>
           <div className="mt-3">
-            <p>Follow us</p>
+            <p className="font-roboto">Follow us</p>
             <ul className="flex gap-4 mt-2">
               <li>
                 <a href="#">
@@ -71,10 +71,10 @@ function Footer() {
             © 2023 Timber and Hatchet LLC.
           </p>
           <ul className="flex flex-col md:flex-row lg:col-start-9 lg:justify-between gap-5 md:gap-16 mt-4">
-            <li className="text-sm lg:text-base">Site Map</li>
-            <li className="text-sm lg:text-base">Accessibility </li>
-            <li className="md:text-white text-sm lg:text-base">Terms & conditions</li>
-            <li className="md:text-white text-sm lg:text-base">Privacy Policy</li>
+            <li className="font-roboto text-sm lg:text-base">Site Map</li>
+            <li className="font-roboto text-sm lg:text-base">Accessibility </li>
+            <li className="font-roboto md:text-white text-sm lg:text-base">Terms & conditions</li>
+            <li className="font-roboto md:text-white text-sm lg:text-base">Privacy Policy</li>
           </ul>
         </div>
       </div>
