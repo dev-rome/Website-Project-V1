@@ -35,11 +35,11 @@ function Hero() {
         </Button>
       </div>
       <div className="absolute bottom-0 bg-[#96969612]">
-        <div className="grid grid-cols-4 lg:grid-cols-12 items-center gap-x-2 pl-4 md:pl-[3.25rem]">
-          <p className="max-w-md col-start-1 col-end-3 text-md md:text-lg text-white">
+        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 items-center gap-x-2 pl-4 lg:pl-[3.25rem]">
+          <p className="max-w-xs sm:max-w-[215px] col-start-1 col-end-3 md:col-end-3 lg:col-end-3 text-md md:text-lg text-white">
             Trusted by start ups and leading businesses
           </p>
-          <div className="col-start-3 col-end-12 py-6">
+          <div className="col-start-3 md:col-start-3 lg:col-start-3 col-end-12 py-6">
             <LogoCarousel />
           </div>
         </div>
