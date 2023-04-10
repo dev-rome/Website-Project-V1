@@ -1,6 +1,19 @@
+import { motion } from "framer-motion";
+
 function StepOne() {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
-    <div className="relative bg-black-rgba pt-3 px-4 pb-16">
+    <motion.div
+      className="relative bg-black-rgba pt-3 px-4 pb-16"
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: 1 }} // Adjust duration to control the speed of the fade-in animation
+      variants={variants}
+    >
       <p className="font-roboto font-bold text-xl text-center">
         Let’s get connected
       </p>
@@ -27,7 +40,7 @@ function StepOne() {
           1
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

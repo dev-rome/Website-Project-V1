@@ -1,12 +1,25 @@
+import { motion } from "framer-motion";
+
 function StepTwo() {
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <div className="relative bg-black-rgba pt-3 px-4 pb-16">
+    <motion.div
+      className="relative bg-black-rgba pt-3 px-4 pb-16"
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: 2 }}
+      variants={variants}
+    >
       <p className="font-roboto font-bold text-xl text-center">
         Match your needs
       </p>
       <div className="flex justify-center mt-10">
         <svg
-        className="relative top-6"
+          className="relative top-6"
           width="75"
           height="75"
           viewBox="0 0 99 102"
@@ -23,7 +36,7 @@ function StepTwo() {
         </svg>
 
         <svg
-        className="relative left-3"
+          className="relative left-3"
           width="85"
           height="85"
           viewBox="0 0 104 112"
@@ -48,7 +61,7 @@ function StepTwo() {
           2
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

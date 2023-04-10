@@ -1,6 +1,19 @@
+import { motion } from "framer-motion";
+
 function StepThree() {
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <div className="relative bg-black-rgba pt-3 px-4 pb-16">
+    <motion.div
+      className="relative bg-black-rgba pt-3 px-4 pb-16"
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: 3 }}
+      variants={variants}
+    >
       <p className="font-roboto font-bold text-xl text-center">
         Meet your goals
       </p>
@@ -51,7 +64,7 @@ function StepThree() {
           3
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
