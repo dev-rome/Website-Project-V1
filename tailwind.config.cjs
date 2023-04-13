@@ -24,6 +24,8 @@ module.exports = {
           "linear-gradient(0deg, rgba(63, 106, 96, 0.8), rgba(63, 106, 96, 0.2)), url('/images/forest-front.png'), url('/images/forest-front.png')",
         "hover-gradient":
           "linear-gradient(90deg, #003A5A 0%, #005382 42.71%, #00934C 55.73%, #00522B 100%)",
+        "button-gradient":
+          "linear-gradient(90deg, rgba(170, 204, 223, 0.83) 0%, rgba(155, 194, 216, 0.6) 30.25%, rgba(162, 226, 196, 0.61) 66.89%, #B9E1CE 100%)",
       },
     },
   },
