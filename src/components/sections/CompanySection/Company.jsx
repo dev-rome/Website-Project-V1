@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
+import SectionContainer from "../../SectionContainer";
 import Globe from "/images/globe.gif";
 import Dev from "/images/dev.gif";
 import Percent from "/images/percent.gif";
-import SectionContainer from "./SectionContainer";
 
 function Company() {
   const [currentImage, setCurrentImage] = useState(0);

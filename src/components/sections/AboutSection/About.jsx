@@ -1,8 +1,8 @@
+import SectionContainer from "../../SectionContainer";
 import Logo from "/images/timber-hatchet-logo.svg";
 import Support from "/images/support.png";
 import Collaboration from "/images/collaboration.png";
 import Transparency from "/images/transparency.png";
-import SectionContainer from "./SectionContainer";
 
 function About() {
   return (
@@ -12,16 +12,20 @@ function About() {
           <div className="md:col-span-4 lg:col-span-5">
             <div className="grid grid-cols-3 lg:grid-cols-5">
               <img
-                className="w-[375px] sm:w-[450px] md:w-auto mx-auto col-span-3 md:col-span-4 lg:col-span-5"
+                className="w-[23.438rem] sm:w-[28.125rem] md:w-auto mx-auto col-span-3 md:col-span-4 lg:col-span-5"
                 src={Logo}
                 alt="Timber & Hatchet"
               />
               <p className="col-span-4 row-start-2 lg:col-span-5 font-roboto mt-4">
-                Timber and Hatchet was founded in 2017 by Diego having a
-                software development background and cross-industry experience.
-                He was able to build Timber & Hatchet to able to curate a team
-                with the necessary skills to create software solutions that meet
-                the specific needs and goals of each project.
+                We have a software development and cross-industry experience
+                that gives us a unique perspective when looking for the right
+                developers to join your projects.
+              </p>
+              <p className="col-span-4 row-start-3 lg:col-span-5 font-roboto mt-4">
+                Focusing on collaboration and transparency, we make sure that
+                our clients and developers create products that are sustainable
+                and valuable. We believe that working together means creating a
+                partnership that is reflected on the end-result.
               </p>
             </div>
           </div>

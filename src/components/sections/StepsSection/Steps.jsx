@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import SectionContainer from "./SectionContainer";
-import StepOne from "../StepOne";
-import StepTwo from "../StepTwo";
-import StepThree from "../StepThree";
-import StepFour from "../StepFour";
+import SectionContainer from "../../SectionContainer";
+import StepOne from "./StepOne";
+import StepTwo from "./StepTwo";
+import StepThree from "./StepThree";
+import StepFour from "./StepFour";
 
 function Steps() {
   const ref = useRef(null);
@@ -18,10 +18,7 @@ function Steps() {
         </h2>
       </div>
 
-      <div
-        className="max-w-7xl mx-auto"
-        ref={ref}
-      >
+      <div className="max-w-7xl mx-auto" ref={ref}>
         {isInView && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12 px-4">
             <StepOne />

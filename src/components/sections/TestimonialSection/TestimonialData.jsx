@@ -1,12 +1,4 @@
-import { useState, useCallback } from "react";
-import TestimonialItem from "../TestimonialItem";
-import Modal from "../Modal";
-
-function Testimonial() {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedTestimonial, setSelectedTestimonial] = useState(null);
-
-  const testimonials = [
+export const testimonials = [
     {
       id: 1,
       src: "/images/icon-one.png",
@@ -52,43 +44,3 @@ function Testimonial() {
         "Beyond work, Diego is a great all around human being. He’s smart, kind, compassionate, and funny. I look forward to working with him in the future!",
     },
   ];
-
-  const handleOpen = useCallback((testimonial) => {
-    setShowModal(true);
-    setSelectedTestimonial(testimonial);
-  }, []);
-
-  const handleClose = () => {
-    setShowModal(false);
-    setSelectedTestimonial(null);
-  };
-
-  const createClickHandler = useCallback(
-    (testimonial) => () => {
-      handleOpen(testimonial);
-    },
-    [handleOpen]
-  );
-
-  return (
-    <div className="max-w-5xl mx-auto pt-24 lg:pt-28 px-4 lg:px-0">
-      <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
-        In their words...
-      </h2>
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 lg:mt-12">
-        {testimonials.map((testimonial) => (
-          <TestimonialItem
-            key={testimonial.id}
-            testimonial={testimonial}
-            onOpen={createClickHandler(testimonial)}
-          />
-        ))}
-        {selectedTestimonial && showModal && (
-          <Modal testimonial={selectedTestimonial} onClose={handleClose} />
-        )}
-      </div>
-    </div>
-  );
-}
-
-export default Testimonial;
