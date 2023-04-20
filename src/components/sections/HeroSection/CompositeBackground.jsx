@@ -8,7 +8,7 @@ import TreeFive from "/images/tree-five.png";
 
 function CompositeBackground() {
   return (
-    <>
+    <div>
       <div className="absolute inset-0 bg-hero-background bg-no-repeat bg-cover bg-center bg-blend-multiply"></div>
       <div className="absolute right-0 bottom-0 opacity-80">
         <img className="w-64 md:w-80 lg:w-96" src={Tech} alt="Tech Pattern" />
@@ -28,7 +28,7 @@ function CompositeBackground() {
       <div className="absolute hidden lg:block left-[65.625rem] 2xl:left-[90.625rem] bottom-0 opacity-40">
         <img className="w-[25rem] 2xl:w-[34.375rem]" src={TreeFive} alt="Trees" />
       </div>
-    </>
+    </div>
   );
 }
 
