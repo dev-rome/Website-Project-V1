@@ -1,4 +1,3 @@
-import Image from "../../Image";
 import Tech from "/images/tech-pattern.png";
 import TreeOne from "/images/tree-one.png";
 import TreeTwo from "/images/tree-two.png";
