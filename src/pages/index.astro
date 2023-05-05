@@ -1,22 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/navbar/Navbar";
-import Hero from "../components/sections/Hero";
-import Info from "../components/sections/Info";
-import Clients from "../components/sections/Clients";
-import Steps from "../components/sections/Steps";
-import About from "../components/sections/About";
-import Contact from "../components/sections/Contact";
+import Hero from "../components/sections/HeroSection/Hero";
+import Company from "../components/sections/CompanySection/Company";
+import Clients from "../components/sections/ClientSection/Clients";
+import Steps from "../components/sections/StepsSection/Steps";
+import About from "../components/sections/AboutSection/About";
+import Contact from "../components/sections/ContactSection/Contact";
+import Footer from "../components/Footer";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
   <main>
-    <Hero client:load />
-    <Info />
-    <Clients />
-    <Steps />
+    <Hero client:load client:only="svelte" />
+    <Company client:load />
+    <Clients client:load />
+    <Steps client:load />
     <About />
-    <Contact />
+    <Contact client:load />
   </main>
+  <Footer />
 </Layout>
