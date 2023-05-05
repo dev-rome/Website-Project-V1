@@ -58,7 +58,7 @@ function Clients() {
                 </ul>
               </div>
             </div>
-            <div className=" lg:col-span-11">
+            <div className="lg:col-span-11">
               <p className="font-roboto text-lg lg:mt-7">Problem</p>
               <div className="mt-4">
                 <p className="font-roboto">
