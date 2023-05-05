@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar/Navbar";
+import CaseStudieInfo from "../components/Case/CaseStudieInfo";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar client:load />
+  <main>
+    <CaseStudieInfo client:load/>
+  </main>
+</Layout>
