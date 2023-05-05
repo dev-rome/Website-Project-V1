@@ -41,7 +41,7 @@ function About() {
               </div>
               <div className="row-start-2 md:row-start-3 flex items-center gap-2">
                 <img src={Transparency} alt="Transparency" />
-                <p className=" font-zwodrei font-bold text-2xl">Transparency</p>
+                <p className="font-zwodrei font-bold text-2xl">Transparency</p>
               </div>
             </div>
           </div>
