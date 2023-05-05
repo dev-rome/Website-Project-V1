@@ -3,9 +3,9 @@ import Button from "../../Button";
 
 function Modal({ testimonial, onClose }) {
   return (
-    <div className="max-w-5xl absolute bg-[#C5E0E3] shadow-[0_10px_4px_rgba(0,0,0,0.25)] backdrop-blur-[2px] rounded-2xl lg:pt-7 lg:px-14 lg:pb-11">
+    <div className="absolute bg-[#C5E0E3] shadow-[0_10px_4px_rgba(0,0,0,0.25)] backdrop-blur-[2px] rounded-2xl lg:pt-7 lg:px-14 lg:pb-11">
       <div className="grid lg:grid-cols-4">
-        <div className="col-start-1 col-span-2 flex">
+        <div className="col-start-1 col-span-3 flex gap-16">
           <img src={testimonial.src} alt={testimonial.alt} />
           <div>
             <h2 className="font-roboto text-lg">{testimonial.title}</h2>
