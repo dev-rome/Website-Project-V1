@@ -3,7 +3,7 @@ import Staples from "/images/staples-red.png";
 import SectionContainer from "../SectionContainer";
 import Button from "../Button";
 
-function CaseStudieInfo() {
+function CaseStudyInfo() {
   const handleBack = () => {
     window.location.href = "/";
   };
@@ -107,4 +107,4 @@ function CaseStudieInfo() {
   );
 }
 
-export default CaseStudieInfo;
+export default CaseStudyInfo;
