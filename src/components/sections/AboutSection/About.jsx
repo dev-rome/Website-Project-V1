@@ -33,15 +33,21 @@ function About() {
             <div className="grid grid-cols-6 md:grid-cols-1 lg:grid-cols-1 gap-y-14 lg:gap-y-20 mt-11 md:mt-0">
               <div className="flex items-center gap-2 md:pt-20 lg:pt-24">
                 <img src={Support} alt="Support" />
-                <p className="font-zwodrei font-bold text-2xl">Support</p>
+                <p className="font-zwodrei font-bold text-lg sm:text-2xl">
+                  Support
+                </p>
               </div>
               <div className="col-start-4 md:row-start-2 md:col-start-1 flex items-center gap-2">
                 <img src={Collaboration} alt="Collaboration" />
-                <p className="font-zwodrei font-bold text-2xl">Collaboration</p>
+                <p className="font-zwodrei font-bold text-lg sm:text-2xl">
+                  Collaboration
+                </p>
               </div>
               <div className="row-start-2 md:row-start-3 flex items-center gap-2">
                 <img src={Transparency} alt="Transparency" />
-                <p className="font-zwodrei font-bold text-2xl">Transparency</p>
+                <p className="font-zwodrei font-bold text-lg sm:text-2xl">
+                  Transparency
+                </p>
               </div>
             </div>
           </div>
