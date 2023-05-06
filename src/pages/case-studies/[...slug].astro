@@ -1,12 +1,12 @@
 ---
-import Layout from "../../layouts/Layout.astro"
+import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/navbar/Navbar";
 import CaseStudyInfo from "../../components/Case/CaseStudyInfo";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Navbar client:load />
+  <Navbar client:only="react" />
   <main>
-    <CaseStudyInfo client:load/>
+    <CaseStudyInfo client:only="react" />
   </main>
 </Layout>
