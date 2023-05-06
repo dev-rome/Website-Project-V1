@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer className="relative pt-16 md:pt-40 lg:pt-32">
       <img
-        className="absolute right-0 bottom-0 w-80 sm:w-96"
+        className="absolute right-0 bottom-0 w-64 sm:w-96"
         src={Tree}
         alt="Trees"
       />
