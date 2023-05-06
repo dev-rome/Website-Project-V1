@@ -14,11 +14,11 @@ import Footer from "../components/Footer";
   <Navbar client:load />
   <main>
     <Hero client:only="react" />
-    <Company client:load />
-    <Clients client:load />
-    <Steps client:load />
+    <Company client:only="react" />
+    <Clients client:only="react" />
+    <Steps client:only="react" />
     <About />
-    <Contact client:load />
+    <Contact client:only="react" />
   </main>
   <Footer />
 </Layout>
