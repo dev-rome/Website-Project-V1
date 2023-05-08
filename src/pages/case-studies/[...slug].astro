@@ -2,11 +2,13 @@
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/navbar/Navbar";
 import CaseStudyInfo from "../../components/Case/CaseStudyInfo";
+
+const { slug } = Astro.params;
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar client:only="react" />
   <main>
-    <CaseStudyInfo client:load />
+    <CaseStudyInfo client:load slug={slug} />
   </main>
 </Layout>
