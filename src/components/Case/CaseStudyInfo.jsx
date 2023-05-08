@@ -38,7 +38,7 @@ function CaseStudyInfo({ slug }) {
               {solution.solutionList.map(([title, item], index) => {
                 return (
                   <li key={index + 1}>
-                    <span className="font-extrabold">{title}</span> {item}
+                    <span className="font-bold">{title}</span> {item}
                   </li>
                 );
               })}
