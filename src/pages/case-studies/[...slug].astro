@@ -9,6 +9,6 @@ const { slug } = Astro.params;
 <Layout title="Welcome to Astro.">
   <Navbar client:only="react" />
   <main>
-    <CaseStudyInfo client:load slug={slug} />
+    <CaseStudyInfo client:only="react" slug={slug} />
   </main>
 </Layout>
