@@ -11,9 +11,9 @@ import Footer from "../components/Footer";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Navbar />
+  <Navbar client:load />
   <main>
-    <Hero client:only="react" />
+    <Hero client:load />
     <Company client:only="react" />
     <Clients client:only="react" />
     <Steps client:only="react" />
