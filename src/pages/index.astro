@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
   <Navbar client:load />
   <main>
     <Hero client:load/>
-    <Company client:load />
+    <Company client:only="react" />
     <Clients client:load />
     <Steps client:only="react" />
     <About client:load />
