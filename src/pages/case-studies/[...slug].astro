@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/navbar/Navbar";
-import CaseStudyInfo from "../../components/Case/CaseStudyInfo";
+import CaseStudieInfo from "../../components/Case/CaseStudieInfo";
 
 const { slug } = Astro.params;
 ---
@@ -9,6 +9,6 @@ const { slug } = Astro.params;
 <Layout title="Welcome to Astro.">
   <Navbar client:only="react" />
   <main>
-    <CaseStudyInfo client:only="react" slug={slug} />
+    <CaseStudieInfo client:only="react" slug={slug} />
   </main>
 </Layout>
