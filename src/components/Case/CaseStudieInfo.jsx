@@ -16,7 +16,7 @@ function CaseStudyInfo({ slug }) {
   } = caseStudy;
 
   const handleBack = () => {
-    window.location.href = "/";
+    window.location.href = "/#clients";
   };
 
   return (
