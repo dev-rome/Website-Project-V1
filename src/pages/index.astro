@@ -7,18 +7,18 @@ import Clients from "../components/sections/ClientSection/Clients";
 import Steps from "../components/sections/StepsSection/Steps";
 import About from "../components/sections/AboutSection/About";
 import Contact from "../components/sections/ContactSection/Contact";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
   <main>
-    <Hero client:only="react"/>
+    <Hero client:only="react" />
     <Company client:load />
     <Clients client:load />
     <Steps client:load />
     <About client:load />
-    <Contact />
+    <Contact client:load/>
   </main>
   <Footer />
 </Layout>
