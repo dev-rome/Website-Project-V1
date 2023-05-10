@@ -51,7 +51,9 @@ function Clients() {
               <div className="col-start-4 col-span-3 md:col-start-4 lg:col-start-5">
                 <ul>
                   {clients.augmentations.map((augmentation) => (
-                    <li key={augmentation} className="font-roboto text-lg">{augmentation}</li>
+                    <li key={augmentation} className="font-roboto text-lg">
+                      {augmentation}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -66,7 +68,9 @@ function Clients() {
                 <p className="font-roboto">{clients.offer}</p>
                 <ul className="mt-4 lg:mt-6 pl-4 lg:pl-6">
                   {clients.benefits.map((benefit) => (
-                    <li key={benefit} className="list-disc font-roboto">{benefit}</li>
+                    <li key={benefit} className="list-disc font-roboto">
+                      {benefit}
+                    </li>
                   ))}
                 </ul>
               </div>
