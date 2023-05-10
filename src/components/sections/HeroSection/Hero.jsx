@@ -9,6 +9,7 @@ function Hero() {
     e.preventDefault();
     const companySection = document.querySelector("#company");
     if (companySection) companySection.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, null, "#company");
   };
 
   return (
