@@ -15,10 +15,10 @@ function Clients() {
   };
 
   const handleClick = () => {
-    window.location.href = `/case-studies/${
-      isActive ? clientTwo.slug : clientOne.slug
-    }`;
+    window.location.href = `/case-studies/${clients.slug}`;
   };
+
+  const clients = isActive ? clientTwo : clientOne;
 
   return (
     <SectionContainer className="pt-20 lg:pt-48" id="clients">
@@ -47,45 +47,27 @@ function Clients() {
           </div>
           <div className="col-span-7 md:col-start-3 lg:col-start-5 md:border-l-4 md:border-black md:pl-4">
             <div className="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-3 mt-5 md:mt-0">
-              {!isActive ? (
-                <img src={clientOne.title} alt="Staples" />
-              ) : (
-                <img src={clientTwo.title} alt="Zipcar" />
-              )}
+              <img src={clients.src} alt={clients.alt} />
               <div className="col-start-4 col-span-3 md:col-start-4 lg:col-start-5">
                 <ul>
-                  {!isActive
-                    ? clientOne.augmentations.map((augmentation) => (
-                        <li className="font-roboto text-lg">{augmentation}</li>
-                      ))
-                    : clientTwo.augmentations.map((augmentation) => (
-                        <li className="font-roboto text-lg">{augmentation}</li>
-                      ))}
+                  {clients.augmentations.map((augmentation) => (
+                    <li key={augmentation} className="font-roboto text-lg">{augmentation}</li>
+                  ))}
                 </ul>
               </div>
             </div>
             <div className="lg:col-span-11">
               <p className="font-roboto text-lg lg:mt-7">Problem</p>
               <div className="mt-4">
-                <p className="font-roboto">
-                  {!isActive ? clientOne.problem : clientTwo.problem}
-                </p>
-                <p className="font-roboto mt-4 lg:mt-6">
-                  {!isActive ? clientOne.goal : clientTwo.goal}
-                </p>
+                <p className="font-roboto">{clients.problem}</p>
+                <p className="font-roboto mt-4 lg:mt-6">{clients.goal}</p>
               </div>
               <div className="mt-6">
-                <p className="font-roboto">
-                  {!isActive ? clientOne.offer : clientTwo.offer}
-                </p>
+                <p className="font-roboto">{clients.offer}</p>
                 <ul className="mt-4 lg:mt-6 pl-4 lg:pl-6">
-                  {!isActive
-                    ? clientOne.benefits.map((benefit) => (
-                        <li className="list-disc font-roboto">{benefit}</li>
-                      ))
-                    : clientTwo.benefits.map((benefit) => (
-                        <li className="list-disc font-roboto">{benefit}</li>
-                      ))}
+                  {clients.benefits.map((benefit) => (
+                    <li key={benefit} className="list-disc font-roboto">{benefit}</li>
+                  ))}
                 </ul>
               </div>
             </div>

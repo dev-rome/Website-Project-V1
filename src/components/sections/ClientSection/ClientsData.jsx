@@ -1,5 +1,6 @@
 export const clientOne = {
-  title: "/images/staples-red.png",
+  src: "/images/staples-red.png",
+  alt: "Staples",
   augmentations: ["Staffing Augmentation", "3 Month Project", "Team size"],
   problem:
     "Staples was facing difficulties in attracting and retaining talented software developers for its development teams. As a result, Staples faced delays in product development, lower productivity, and increased costs.",
@@ -16,7 +17,8 @@ export const clientOne = {
 };
 
 export const clientTwo = {
-  title: "/images/zipcar-gray.png",
+  src: "/images/zipcar-gray.png",
+  alt: "Zipcar",
   augmentations: ["Staffing Augmentation", "5 Month Project", "2-3 Engineers"],
   problem:
     "Zipcar was facing difficulties in attracting and retaining talented software developers for its development teams. As a result, Zipcar faced delays in product development, lower productivity, and increased costs.",
