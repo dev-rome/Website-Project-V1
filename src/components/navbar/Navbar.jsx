@@ -18,11 +18,27 @@ function Navbar() {
     const sectionId = e.target.getAttribute("href");
     const sectionPosition = document.querySelector(sectionId).offsetTop;
     window.scrollTo({ top: sectionPosition, behavior: "smooth" });
+    window.history.pushState(null, null, sectionId);
+  };
+
+  const handleImageClick = (e) => {
+    e.preventDefault();
+    const heroSection = e.target.getAttribute("href");
+    const heroSectionPosition = document.querySelector(heroSection);
+    window.scrollTo({ top: heroSectionPosition, behavior: "smooth" });
+    window.history.pushState(null, null, "#hero");
   };
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full flex justify-between py-[0.625rem] xl:pl-3 pr-10 xl:pr-[4.375rem] bg-white/10 backdrop-filter backdrop-blur-sm">
-      <Image src={Logo} width={225} height={80} alt={"Timber & Hatchet Logo"} />
+      <a href="#hero" onClick={handleImageClick}>
+        <Image
+          src={Logo}
+          width={225}
+          height={80}
+          alt={"Timber & Hatchet Logo"}
+        />
+      </a>
       <Button className="block xl:hidden">
         <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
       </Button>
