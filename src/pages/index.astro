@@ -13,12 +13,12 @@ import Footer from "../components/footer/Footer";
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
   <main>
-    <Hero client:only="react" />
-    <Company client:load />
-    <Clients client:load />
-    <Steps client:load />
-    <About client:load />
-    <Contact client:load />
+    <Hero client:idle />
+    <Company client:visible />
+    <Clients client:visible />
+    <Steps client:visible />
+    <About client:visible />
+    <Contact client:visible />
   </main>
-  <Footer client:load />
+  <Footer client:visible />
 </Layout>
