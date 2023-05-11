@@ -29,11 +29,10 @@ function Hero() {
       </div>
       <div className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Button onClick={handleClick}>
-          {/* <Icon
+          <Icon
             className="text-5xl md:text-6xl text-white"
             icon="ph:caret-down-light"
-          /> */}
-          Hello
+          />
         </Button>
       </div>
       <div className="absolute bottom-0 bg-[#96969612]">
