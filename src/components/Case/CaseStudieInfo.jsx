@@ -15,10 +15,6 @@ function CaseStudyInfo({ slug }) {
     resultsAndBenefits,
   } = caseStudy;
 
-  const handleBack = () => {
-    window.location.href = "/#clients";
-  };
-
   return (
     <SectionContainer className="min-h-screen bg-[#DFE8E8] pt-36 px-4 lg:px-0">
       <div className="max-w-5xl mx-auto">
@@ -26,9 +22,11 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 flex flex-col sm:flex-row justify-between gap-8">
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
-              <Button caseStudy onClick={handleBack}>
-                All Our Case Studies
-              </Button>
+              <a href="/#clients">
+                <Button caseStudy>
+                  All Our Case Studies
+                </Button>
+              </a>
               <Icon className="text-2xl" icon="ic:round-keyboard-arrow-right" />
             </div>
           </div>
