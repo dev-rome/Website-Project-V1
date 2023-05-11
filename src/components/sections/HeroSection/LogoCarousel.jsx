@@ -52,7 +52,6 @@ function LogoCarousel() {
       animationEasingFunction="linear"
       disableDotsControls
       disableButtonsControls
-      ssrSilentMode={false}
     />
   );
 }
