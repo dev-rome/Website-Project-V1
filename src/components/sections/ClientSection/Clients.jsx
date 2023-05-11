@@ -14,10 +14,6 @@ function Clients() {
     setIsActive(!isActive);
   };
 
-  const handleClick = () => {
-    window.location.href = `/case-studies/${clients.slug}`;
-  };
-
   const clients = isActive ? clientTwo : clientOne;
 
   return (
@@ -75,15 +71,16 @@ function Clients() {
                 </ul>
               </div>
             </div>
-            <div className="flex items-center mt-8 lg:mt-14">
-              <Button caseStudy onClick={handleClick}>
-                Read Full Case Study
-              </Button>
+            <a
+              className="flex items-center mt-8 lg:mt-14"
+              href={`/case-studies/${clients.slug}`}
+            >
+              <Button caseStudy>Read Full Case Study</Button>
               <Icon
                 className="self-end text-2xl"
                 icon="ic:round-keyboard-arrow-right"
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
