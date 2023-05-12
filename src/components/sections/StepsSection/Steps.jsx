@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 import SectionContainer from "../../SectionContainer";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
@@ -7,8 +6,10 @@ import StepThree from "./StepThree";
 import StepFour from "./StepFour";
 
 function Steps() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 1,
+  });
 
   return (
     <SectionContainer className="pt-20 lg:pt-48" id="steps">
@@ -19,7 +20,7 @@ function Steps() {
       </div>
 
       <div className="max-w-7xl mx-auto" ref={ref}>
-        {isInView && (
+        {inView && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12 px-4">
             <StepOne />
             <StepTwo />
