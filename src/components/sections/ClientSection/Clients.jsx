@@ -11,7 +11,7 @@ function Clients() {
   const [isActive, setIsActive] = useState(false);
 
   const handleToggle = () => {
-    setIsActive(!isActive);
+    setIsActive(prevIsActive => !prevIsActive);
   };
 
   const clients = isActive ? clientTwo : clientOne;
