@@ -10,6 +10,17 @@ import Contact from "../components/sections/ContactSection/Contact";
 import Footer from "../components/footer/Footer";
 ---
 
+<style>
+  .transition-fade {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+</style>
+
 <Layout title="Welcome to Astro.">
   <div class="transition-fade">
     <Navbar client:load />
