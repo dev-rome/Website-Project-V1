@@ -9,13 +9,9 @@ function Company() {
   const [currentText, setCurrentText] = useState(0);
 
   const images = [
-    <img className="w-full h-full object-cover" src={Globe} alt={"Globe"} />,
-    <img className="w-full h-full object-cover" src={Dev} alt={"Dev"} />,
-    <img
-      className="w-full h-full object-cover"
-      src={Percent}
-      alt={"Percent"}
-    />,
+    <img className="w-full h-full object-cover" src={Globe} alt="Globe" />,
+    <img className="w-full h-full object-cover" src={Dev} alt="Dev" />,
+    <img className="w-full h-full object-cover" src={Percent} alt="Percent" />,
   ];
 
   const imageDescriptions = [
