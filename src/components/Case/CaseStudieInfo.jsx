@@ -23,9 +23,7 @@ function CaseStudyInfo({ slug }) {
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
               <a className="swup-link" href="/#clients">
-                <Button caseStudy>
-                  All Our Case Studies
-                </Button>
+                <Button caseStudy>All Our Case Studies</Button>
               </a>
               <Icon className="text-2xl" icon="ic:round-keyboard-arrow-right" />
             </div>
@@ -33,9 +31,9 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 mt-10">
             <p className="font-roboto">{description}</p>
             <ol className="list-decimal font-roboto pl-6">
-              {solution.solutionList.map(([title, item], index) => {
+              {solution.solutionList.map(([title, item]) => {
                 return (
-                  <li key={index + 1}>
+                  <li key={title}>
                     <span className="font-bold">{title}</span> {item}
                   </li>
                 );
@@ -49,8 +47,8 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 mt-5">
             <p className="font-roboto">{descriptionThree}</p>
             <ul className="list-disc font-roboto pl-6">
-              {resultsAndBenefits.benefitsList.map((item, index) => {
-                return <li key={index + 1}>{item}</li>;
+              {resultsAndBenefits.benefitsList.map((item) => {
+                return <li key={item}>{item}</li>;
               })}
             </ul>
             <p className="font-roboto pb-10">{resultsAndBenefits.results}</p>

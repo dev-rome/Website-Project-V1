@@ -42,7 +42,7 @@ export const caseStudyData = [
     },
   },
   {
-    id1: 2,
+    id: 2,
     src: "/images/zipcar-gray.png",
     alt: "Zipcar",
     slug: "zipcar",
