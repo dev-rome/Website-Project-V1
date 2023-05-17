@@ -1,7 +1,15 @@
+import { useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Button from "../../Button";
 
 function Modal({ testimonial, onClose }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
+
   return (
     <div
       onClick={onClose}
