@@ -23,7 +23,7 @@ function CaseStudyInfo({ slug }) {
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
               <a className="swup-link" href="/#clients">
-                <Button caseStudy>All Our Case Studies</Button>
+                <Button AllCaseStudyButton>All Our Case Studies</Button>
               </a>
               <Icon className="text-2xl" icon="ic:round-keyboard-arrow-right" />
             </div>

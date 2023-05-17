@@ -75,7 +75,7 @@ function Clients() {
               className="swup-link flex items-center mt-8 lg:mt-14"
               href={`/case-studies/${clients.slug}`}
             >
-              <Button caseStudy>Read Full Case Study</Button>
+              <Button CaseStudyButton>Read Full Case Study</Button>
               <Icon
                 className="self-end text-2xl"
                 icon="ic:round-keyboard-arrow-right"

@@ -53,7 +53,7 @@ function Navbar() {
             />
           );
         })}
-        <Button logIn>Log in</Button>
+        <Button LogInButton>Log in</Button>
       </ul>
     </nav>
   );

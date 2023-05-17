@@ -14,7 +14,7 @@ function TestimonialItem({ testimonial, onOpen }) {
         {testimonial.description}
       </p>
       <div className="flex justify-center">
-        <Button onClick={onOpen} readMore>
+        <Button onClick={onOpen} ReadMoreButton>
           Read More
         </Button>
       </div>
