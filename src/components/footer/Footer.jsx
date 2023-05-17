@@ -6,15 +6,15 @@ import FooterContact from "./FooterContact";
 
 function Footer() {
   const items = [
-    { text: "Site Map", className: "font-roboto text-sm md:text-base" },
-    { text: "Accessibility", className: "font-roboto text-sm md:text-base" },
+    { text: "Site Map", classname: "font-roboto text-sm md:text-base" },
+    { text: "Accessibility", classname: "font-roboto text-sm md:text-base" },
     {
       text: "Terms & conditions",
-      className: "font-roboto md:text-white text-sm md:text-base",
+      classname: "font-roboto md:text-white text-sm md:text-base",
     },
     {
       text: "Privacy Policy",
-      className: "font-roboto md:text-white text-sm md:text-base",
+      classname: "font-roboto md:text-white text-sm md:text-base",
     },
   ];
 
@@ -46,8 +46,8 @@ function Footer() {
             © 2023 Timber and Hatchet LLC.
           </p>
           <ul className="flex flex-col md:flex-row lg:col-start-9 lg:justify-between gap-5 md:gap-16 mt-4">
-            {items.map(({ text, className }, index) => (
-              <li key={index} className={className}>
+            {items.map(({ text, classname }) => (
+              <li key={text} className={classname}>
                 {text}
               </li>
             ))}
