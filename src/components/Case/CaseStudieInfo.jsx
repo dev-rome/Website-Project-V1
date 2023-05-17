@@ -22,7 +22,7 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 flex flex-col sm:flex-row justify-between gap-8">
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
-              <a href="/#clients">
+              <a className="swup-link" href="/#clients">
                 <Button caseStudy>
                   All Our Case Studies
                 </Button>
