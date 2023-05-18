@@ -14,11 +14,11 @@ function Modal({ testimonial, onClose }) {
   }, []);
 
   return (
-    <>
       <div
         onClick={onClose}
         className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-10 px-4"
-      ></div>
+      >
+
       <div className="relative max-w-5xl bg-[#C5E0E3] shadow-[0_10px_4px_rgba(0,0,0,0.25)] backdrop-blur-[2px] rounded-2xl pt-7 px-4 md:px-14 pb-11">
         <div className="grid lg:grid-cols-4">
           <div className="col-start-1 col-span-3 flex items-start gap-10 mb-6">
@@ -40,7 +40,7 @@ function Modal({ testimonial, onClose }) {
           </div>
         </div>
       </div>
-    </>
+      </div>
   );
 }
 
