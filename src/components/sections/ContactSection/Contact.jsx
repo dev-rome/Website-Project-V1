@@ -31,7 +31,7 @@ function Contact() {
                 will get back to you as soon as we can.
               </p>
               <Button
-                className="font-roboto bg-zinc-50/[.7] rounded-sm shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:bg-button-gradient mt-6 py-3 px-11"
+                className="custom-button custom-back-button"
                 onClick={handleBack}
               >
                 Return to form
