@@ -8,13 +8,15 @@ import Testimonial from "../TestimonialSection/Testimonial";
 import Button from "../../Button";
 
 function Clients() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState("clientOne");
 
-  const handleToggle = () => {
-    setIsActive(prevIsActive => !prevIsActive);
+  const handleToggle = (client) => {
+    if (client !== isActive) {
+      setIsActive(client);
+    }
   };
 
-  const clients = isActive ? clientTwo : clientOne;
+  const clients = isActive === "clientOne" ? clientOne : clientTwo;
 
   return (
     <SectionContainer className="pt-20 lg:pt-48" id="clients">
@@ -26,17 +28,17 @@ function Clients() {
           <div className="col-span-2 md:col-span-1 lg:row-start-1 lg:col-span-2 flex gap-3 md:items-start lg:gap-2 md:pr-3">
             <img
               className={`cursor-pointer ${
-                isActive ? " " : `border-2 border-black`
+                isActive === "clientOne" ? "border-2 border-black" : ""
               }`}
-              onClick={handleToggle}
+              onClick={() => handleToggle("clientOne")}
               src={Staples}
               alt="Staples"
             />
             <img
               className={`cursor-pointer ${
-                isActive ? `border-2 border-black` : " "
+                isActive === "clientTwo" ? "border-2 border-black" : ""
               }`}
-              onClick={handleToggle}
+              onClick={() => handleToggle("clientTwo")}
               src={ZipCar}
               alt="Zipcar"
             />
@@ -72,7 +74,7 @@ function Clients() {
               </div>
             </div>
             <a
-              className="swup-link flex items-center mt-8 lg:mt-14"
+              className="swup-link w-[210px] flex items-center mt-8 lg:mt-14"
               href={`/case-studies/${clients.slug}`}
             >
               <Button CaseStudyButton>Read Full Case Study</Button>
