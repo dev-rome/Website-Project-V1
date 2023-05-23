@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "zwodrei Bold";
+  src: url("./fonts/zwodrei-Bold.ttf") format("ttf");
+}
+
+.custom-button {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(250, 250, 250, 0.7) !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.125rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.custom-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(170, 204, 223, 0.83) 0%,
+    rgba(155, 194, 216, 0.6) 30.25%,
+    rgba(162, 226, 196, 0.61) 66.89%,
+    #b9e1ce 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.custom-button:hover:after {
+  opacity: 1;
+}
+
+.custom-submit-button {
+  margin-top: 1.5rem;
+  padding-block: 0.5rem;
+}
+
+.custom-back-button {
+  margin-top: 1.5rem;
+  padding-block: 0.75rem;
+  padding-inline: 2.75rem;
+}
