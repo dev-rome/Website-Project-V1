@@ -55,10 +55,7 @@ function Form({ onSubmit }) {
         value={formData.message}
         onChange={handleChange}
       ></textarea>
-      <Button
-        className="w-full font-roboto bg-zinc-50/[.7] rounded-sm shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:bg-button-gradient mt-6 py-2"
-        type="submit"
-      >
+      <Button className="custom-button custom-submit-button" type="submit">
         Submit
       </Button>
     </form>
