@@ -16,5 +16,3 @@ function Button({ children, ReadMoreButton, LogInButton, CaseStudyButton, AllCas
 }
 
 export default Button;
-// hover:bg-hover-gradient hover:bg-clip-text hover:text-transparent
-// relative after:absolute after:border-b-2 after:inset-0 z-[-1] after:mb-[-2px] after:bg-hover-gradient"
