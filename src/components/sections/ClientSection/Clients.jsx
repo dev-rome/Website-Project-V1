@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { clientOne, clientTwo } from "./ClientsData";
-import { Icon } from "@iconify/react";
 import SectionContainer from "../../SectionContainer";
 import Staples from "/images/staples-logo.png";
 import ZipCar from "/images/zipcar-logo.png";
@@ -74,14 +73,64 @@ function Clients() {
               </div>
             </div>
             <a
-              className="swup-link w-[210px] flex items-center mt-8 lg:mt-14"
+              className="swup-link custom-case-study-button flex w-[13rem] group"
               href={`/case-studies/${clients.slug}`}
             >
-              <Button CaseStudyButton>Read Full Case Study</Button>
-              <Icon
-                className="self-end text-2xl"
-                icon="ic:round-keyboard-arrow-right"
-              />
+              <Button className="flex items-center italic mt-8 lg:mt-14">
+                <span className="gradient-text mr-2">Read Full Case Study</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 14 18"
+                  fill="none"
+                  className="text-2xl transform transition-transform duration-500 ease-in-out group-hover:translate-x-2"
+                  width="10"
+                  height="12"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                      gradientTransform="rotate(90)"
+                    >
+                      <stop
+                        offset="0%"
+                        style={{ stopColor: "#003a5a", stopOpacity: 1 }}
+                      />
+                      <stop
+                        offset="42.71%"
+                        style={{ stopColor: "#005382", stopOpacity: 1 }}
+                      />
+                      <stop
+                        offset="55.73%"
+                        style={{ stopColor: "#00934c", stopOpacity: 1 }}
+                      />
+                      <stop
+                        offset="100%"
+                        style={{ stopColor: "#00522b", stopOpacity: 1 }}
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M2 2L12.2479 9L2 16"
+                    stroke="black"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="transition-all duration-500 ease-in-out"
+                  />
+                  <path
+                    d="M2 2L12.2479 9L2 16"
+                    stroke="url(#gradient)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                  />
+                </svg>
+              </Button>
             </a>
           </div>
         </div>

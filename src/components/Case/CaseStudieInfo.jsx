@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import { caseStudyData } from "./CaseStudyData";
 import SectionContainer from "../SectionContainer";
 import Button from "../Button";
@@ -22,10 +21,68 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 flex flex-col sm:flex-row justify-between gap-8">
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
-              <a className="swup-link" href="/#clients">
-                <Button AllCaseStudyButton>All Our Case Studies</Button>
+              <a
+                className="swup-link custom-case-study-button group"
+                href="/#clients"
+              >
+                <Button className="flex items-center italic">
+                  <span className="gradient-text mr-2">
+                    All Our Case Studies
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 14 18"
+                    fill="none"
+                    className="text-2xl transform transition-transform duration-500 ease-in-out group-hover:translate-x-2"
+                    width="10"
+                    height="12"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="gradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                        gradientTransform="rotate(90)"
+                      >
+                        <stop
+                          offset="0%"
+                          style={{ stopColor: "#003a5a", stopOpacity: 1 }}
+                        />
+                        <stop
+                          offset="42.71%"
+                          style={{ stopColor: "#005382", stopOpacity: 1 }}
+                        />
+                        <stop
+                          offset="55.73%"
+                          style={{ stopColor: "#00934c", stopOpacity: 1 }}
+                        />
+                        <stop
+                          offset="100%"
+                          style={{ stopColor: "#00522b", stopOpacity: 1 }}
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M2 2L12.2479 9L2 16"
+                      stroke="black"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="transition-all duration-500 ease-in-out"
+                    />
+                    <path
+                      d="M2 2L12.2479 9L2 16"
+                      stroke="url(#gradient)"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                    />
+                  </svg>
+                </Button>
               </a>
-              <Icon className="text-2xl" icon="ic:round-keyboard-arrow-right" />
             </div>
           </div>
           <div className="col-span-12 mt-10">
