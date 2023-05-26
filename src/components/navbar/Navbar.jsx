@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import Logo from "/images/timber-hatchet-logo.png";
 import Image from "../Image";
@@ -5,6 +6,9 @@ import NavItem from "./NavItem";
 import Button from "../Button";
 
 function Navbar() {
+  const [activeSection, setActiveSection] = useState("");
+  const sectionOffsets = useRef({});
+
   const items = [
     { title: "What we do", href: "#company" },
     { title: "Our clients", href: "#clients" },
@@ -13,20 +17,53 @@ function Navbar() {
     { title: "Contact", href: "#contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const sections = Object.keys(sectionOffsets.current);
+
+      let active = "";
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const sectionId = sections[i];
+        if (scrollPosition >= sectionOffsets.current[sectionId]) {
+          active = sectionId;
+          break;
+        }
+      }
+
+      setActiveSection(active);
+    };
+
+    const calculateSectionOffsets = () => {
+      items.forEach(({ href }) => {
+        const section = document.querySelector(href);
+        if (section) {
+          sectionOffsets.current[href] = section.offsetTop;
+        }
+      });
+    };
+
+    calculateSectionOffsets();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleClick = (e) => {
     e.preventDefault();
     const sectionId = e.target.getAttribute("href");
-    const sectionPosition = document.querySelector(sectionId).offsetTop;
+    const sectionPosition = sectionOffsets.current[sectionId];
     window.scrollTo({ top: sectionPosition, behavior: "smooth" });
     window.history.pushState(null, null, sectionId);
   };
 
   const handleImageClick = (e) => {
     e.preventDefault();
-    const heroSection = e.target.getAttribute("href");
-    const heroSectionPosition = document.querySelector(heroSection);
-    window.scrollTo({ top: heroSectionPosition, behavior: "smooth" });
-    window.history.pushState(null, null, "#hero");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -46,10 +83,11 @@ function Navbar() {
         {items.map(({ title, href }) => {
           return (
             <NavItem
-              onClick={handleClick}
               key={href}
               title={title}
               href={href}
+              isActive={activeSection === href}
+              onClick={handleClick}
             />
           );
         })}
