@@ -31,7 +31,7 @@ function Contact() {
                 will get back to you as soon as we can.
               </p>
               <Button
-                className="custom-button custom-back-button"
+                className="custom-form-button custom-form-back-button"
                 onClick={handleBack}
               >
                 Return to form
