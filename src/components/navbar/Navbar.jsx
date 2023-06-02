@@ -55,10 +55,24 @@ function Navbar() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const sectionId = e.target.getAttribute("href");
-    const sectionPosition = sectionOffsets.current[sectionId];
-    window.scrollTo({ top: sectionPosition, behavior: "smooth" });
-    window.history.pushState(null, null, sectionId);
+    const href = e.target.getAttribute("href");
+    const sectionId = href.replace("#", "");
+
+    if (sectionId) {
+      if (window.location.pathname === "/") {
+        // User is already on the home page
+        const section = document.querySelector(`#${sectionId}`);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+          window.history.pushState(null, null, href);
+        }
+      } else {
+        // User is on a different page
+        const homeUrl = window.location.origin + "/";
+        const newUrl = homeUrl + href;
+        window.location.assign(newUrl);
+      }
+    }
   };
 
   const handleImageClick = (e) => {
