@@ -19,16 +19,17 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const sections = Object.keys(sectionOffsets.current);
+      const scrollPosition = window.scrollY;
+      const sections = Array.from(
+        document.querySelectorAll("section[id]")
+      ).reverse();
 
       let active = "";
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const sectionId = sections[i];
-        if (scrollPosition >= sectionOffsets.current[sectionId]) {
-          active = sectionId;
+      for (const section of sections) {
+        const offset = section.offsetTop;
+        if (scrollPosition >= offset) {
+          active = `#${section.id}`;
           break;
         }
       }
@@ -36,16 +37,6 @@ function Navbar() {
       setActiveSection(active);
     };
 
-    const calculateSectionOffsets = () => {
-      items.forEach(({ href }) => {
-        const section = document.querySelector(href);
-        if (section) {
-          sectionOffsets.current[href] = section.offsetTop;
-        }
-      });
-    };
-
-    calculateSectionOffsets();
     window.addEventListener("scroll", handleScroll);
 
     return () => {
