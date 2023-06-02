@@ -1,6 +1,5 @@
-import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import CaseStudieInfo from "../components/case/CaseStudieInfo";
+import CaseStudieInfo from "./Case/CaseStudieInfo"
 import { motion, AnimatePresence } from "framer-motion";
 
 const CaseStudyPage = ({ slug }) => {
