@@ -21,10 +21,7 @@ function CaseStudyInfo({ slug }) {
           <div className="col-span-12 flex flex-col sm:flex-row justify-between gap-8">
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
-              <a
-                className="swup-link custom-case-study-button group"
-                href="/#clients"
-              >
+              <a className="custom-case-study-button group" href="/#clients">
                 <Button className="flex items-center italic">
                   <span className="gradient-text mr-2">
                     All Our Case Studies

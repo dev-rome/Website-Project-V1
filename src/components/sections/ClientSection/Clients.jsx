@@ -73,7 +73,7 @@ function Clients() {
               </div>
             </div>
             <a
-              className="swup-link custom-case-study-button flex w-[13rem] group"
+              className="custom-case-study-button flex w-[13rem] group"
               href={`/case-studies/${clients.slug}`}
             >
               <Button className="flex items-center italic mt-8 lg:mt-14">
