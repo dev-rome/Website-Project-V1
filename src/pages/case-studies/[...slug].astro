@@ -1,25 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Navbar from "../../components/navbar/Navbar";
-import CaseStudieInfo from "../../components/Case/CaseStudieInfo";
+import CaseStudyPage from "../../components/CaseStudyPage";
 
 const { slug } = Astro.params;
 ---
 
-<style>
-  .transition-fade {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
-  }
-
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
-</style>
-
 <Layout title="Welcome to Astro.">
-  <div class="transition-fade">
-    <Navbar client:load />
-    <CaseStudieInfo client:load slug={slug} />
-  </div>
+  <CaseStudyPage client:load slug={slug} />
 </Layout>
