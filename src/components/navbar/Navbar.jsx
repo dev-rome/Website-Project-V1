@@ -28,7 +28,10 @@ function Navbar() {
 
       for (const section of sections) {
         const offset = section.offsetTop;
-        if (scrollPosition >= offset) {
+        const height = section.offsetHeight;
+        const sectionTop = offset - 50; // Adjust this value to fine-tune the scroll position
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + height) {
           active = `#${section.id}`;
           break;
         }
