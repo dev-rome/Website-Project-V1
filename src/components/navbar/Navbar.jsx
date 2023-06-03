@@ -29,7 +29,7 @@ function Navbar() {
       for (const section of sections) {
         const offset = section.offsetTop;
         const height = section.offsetHeight;
-        const sectionTop = offset - 50; // Adjust this value to fine-tune the scroll position
+        const sectionTop = offset - 50;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + height) {
           active = `#${section.id}`;
@@ -54,14 +54,12 @@ function Navbar() {
 
     if (sectionId) {
       if (window.location.pathname === "/") {
-        // User is already on the home page
         const section = document.querySelector(`#${sectionId}`);
         if (section) {
           section.scrollIntoView({ behavior: "smooth" });
           window.history.pushState(null, null, href);
         }
       } else {
-        // User is on a different page
         const homeUrl = window.location.origin + "/";
         const newUrl = homeUrl + href;
         window.location.assign(newUrl);
