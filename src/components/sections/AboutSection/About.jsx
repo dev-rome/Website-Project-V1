@@ -15,7 +15,10 @@ function About() {
   });
 
   return (
-    <SectionContainer className="pt-20 lg:pt-44" id="about">
+    <SectionContainer
+      className="min-h-screen flex justify-center items-center"
+      id="about"
+    >
       <div className="max-w-5xl mx-auto px-4">
         <div className="grid md:grid-cols-8 lg:grid-cols-11">
           <div className="md:col-span-4 lg:col-span-5">

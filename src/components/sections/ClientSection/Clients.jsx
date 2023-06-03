@@ -18,7 +18,10 @@ function Clients() {
   const clients = isActive === "clientOne" ? clientOne : clientTwo;
 
   return (
-    <SectionContainer className="pt-20 lg:pt-48" id="clients">
+    <SectionContainer
+      className="min-h-screen flex flex-col justify-center items-center py-24"
+      id="clients"
+    >
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
           Working with great leaders

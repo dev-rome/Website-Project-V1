@@ -18,7 +18,7 @@ function Contact() {
 
   if (submitted) {
     return (
-      <SectionContainer className="pt-20 lg:pt-44">
+      <SectionContainer className="min-h-screen flex justify-center items-center">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)] lg:mb-12">
             Thank You!
@@ -49,7 +49,10 @@ function Contact() {
   }
 
   return (
-    <SectionContainer className="pt-20 lg:pt-44" id="contact">
+    <SectionContainer
+      className="min-h-screen flex justify-center items-center"
+      id="contact"
+    >
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)] lg:mb-12">
           Let’s chat!

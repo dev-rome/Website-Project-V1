@@ -1,4 +1,4 @@
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import SectionContainer from "../../SectionContainer";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
@@ -12,7 +12,7 @@ function Steps() {
   });
 
   return (
-    <SectionContainer className="min-h-screen pt-20 lg:pt-44" id="steps">
+    <SectionContainer className="min-h-screen pt-20 lg:pt-36" id="steps">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
           How we find your perfect match
