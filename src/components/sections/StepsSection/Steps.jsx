@@ -12,22 +12,27 @@ function Steps() {
   });
 
   return (
-    <SectionContainer className="min-h-screen pt-20 lg:pt-36" id="steps">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
-          How we find your perfect match
-        </h2>
-      </div>
+    <SectionContainer
+      className="min-h-screen flex flex-col justify-center"
+      id="steps"
+    >
+      <div className="px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
+            Find your perfect match
+          </h2>
+        </div>
 
-      <div className="max-w-7xl mx-auto" ref={ref}>
-        {inView && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12 px-4">
-            <StepOne />
-            <StepTwo />
-            <StepThree />
-            <StepFour />
-          </div>
-        )}
+        <div className="max-w-7xl mx-auto" ref={ref}>
+          {inView && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12 px-4">
+              <StepOne />
+              <StepTwo />
+              <StepThree />
+              <StepFour />
+            </div>
+          )}
+        </div>
       </div>
     </SectionContainer>
   );
