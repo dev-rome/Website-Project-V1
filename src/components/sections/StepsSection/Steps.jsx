@@ -12,7 +12,7 @@ function Steps() {
   });
 
   return (
-    <SectionContainer className="pt-20 lg:pt-48" id="steps">
+    <SectionContainer className="min-h-screen pt-20 lg:pt-44" id="steps">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
           How we find your perfect match
