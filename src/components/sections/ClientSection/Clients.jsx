@@ -22,8 +22,8 @@ function Clients() {
       className="min-h-screen flex flex-col justify-center items-center py-24"
       id="clients"
     >
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl text-[rgba(0,0,0,0.8)]">
+      <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
+        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Working with great leaders
         </h2>
         <div className="grid md:grid-cols-5 lg:grid-cols-11 mt-6 lg:mt-12">
@@ -51,7 +51,7 @@ function Clients() {
               <div className="col-start-4 col-span-3 md:col-start-4 lg:col-start-5">
                 <ul>
                   {clients.augmentations.map((augmentation) => (
-                    <li key={augmentation} className="font-roboto text-lg">
+                    <li key={augmentation} className="font-roboto text-lg 2xl:text-xl">
                       {augmentation}
                     </li>
                   ))}
@@ -59,16 +59,16 @@ function Clients() {
               </div>
             </div>
             <div className="lg:col-span-11">
-              <p className="font-roboto text-lg lg:mt-7">Problem</p>
+              <p className="font-roboto text-lg 2xl:text-xl lg:mt-7">Problem</p>
               <div className="mt-4">
-                <p className="font-roboto">{clients.problem}</p>
-                <p className="font-roboto mt-4 lg:mt-6">{clients.goal}</p>
+                <p className="font-roboto 2xl:text-lg">{clients.problem}</p>
+                <p className="font-roboto 2xl:text-lg mt-4 lg:mt-6">{clients.goal}</p>
               </div>
               <div className="mt-6">
-                <p className="font-roboto">{clients.offer}</p>
+                <p className="font-roboto 2xl:text-lg">{clients.offer}</p>
                 <ul className="mt-4 lg:mt-6 pl-4 lg:pl-6">
                   {clients.benefits.map((benefit) => (
-                    <li key={benefit} className="list-disc font-roboto">
+                    <li key={benefit} className="list-disc font-roboto 2xl:text-lg">
                       {benefit}
                     </li>
                   ))}

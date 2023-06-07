@@ -14,7 +14,7 @@ function StepFour() {
       transition={{ duration: 0.5, delay: 4 }}
       variants={variants}
     >
-      <p className="font-roboto font-bold text-xl text-center">
+      <p className="font-roboto font-bold text-xl 2xl:text-2xl text-center">
         Stay connected
       </p>
       <div className="flex justify-center mt-10">
@@ -56,7 +56,7 @@ function StepFour() {
           />
         </svg>
       </div>
-      <p className="mt-10">
+      <p className="mt-10 2xl:text-lg">
         Our partnership doesn’t stop here! Stay in touch to review previous
         projects, share your thoughts with us, or bring a new idea to life!
       </p>

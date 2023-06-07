@@ -11,10 +11,10 @@ function StepOne() {
       className="relative bg-black-rgba pt-3 px-4 pb-16"
       initial="hidden"
       animate="visible"
-      transition={{ duration: 0.5, delay: 1 }} // Adjust duration to control the speed of the fade-in animation
+      transition={{ duration: 0.5, delay: 1 }} 
       variants={variants}
     >
-      <p className="font-roboto font-bold text-xl text-center">
+      <p className="font-roboto font-bold text-xl 2xl:text-2xl text-center">
         Let’s get connected
       </p>
       <div className="flex justify-center mt-10">
@@ -31,7 +31,7 @@ function StepOne() {
           />
         </svg>
       </div>
-      <p className="mt-10">
+      <p className="mt-10 2xl:text-lg">
         Share your ideas, budget, requirements, and any other information that
         can help us get to know you and your business better
       </p>

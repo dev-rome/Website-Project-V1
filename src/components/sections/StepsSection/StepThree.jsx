@@ -14,7 +14,7 @@ function StepThree() {
       transition={{ duration: 0.5, delay: 3 }}
       variants={variants}
     >
-      <p className="font-roboto font-bold text-xl text-center">
+      <p className="font-roboto font-bold text-xl 2xl:text-2xl text-center">
         Meet your goals
       </p>
       <div className="flex justify-center mt-10">
@@ -55,7 +55,7 @@ function StepThree() {
           />
         </svg>
       </div>
-      <p className="mt-10">
+      <p className="mt-10 2xl:text-lg">
         We will work alongside you and deliver end-to-end support throughout the
         project to ensure maximum efficiency and excellent results
       </p>

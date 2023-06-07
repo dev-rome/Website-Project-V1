@@ -14,7 +14,7 @@ function StepTwo() {
       transition={{ duration: 0.5, delay: 2 }}
       variants={variants}
     >
-      <p className="font-roboto font-bold text-xl text-center">
+      <p className="font-roboto font-bold text-xl 2xl:text-2xl text-center">
         Match your needs
       </p>
       <div className="flex justify-center mt-10">
@@ -52,7 +52,7 @@ function StepTwo() {
         </svg>
       </div>
 
-      <p className="mt-10">
+      <p className="mt-10 2xl:text-lg">
         We will gather the best tools and talents based on your needs to meet
         your project and business goals
       </p>
