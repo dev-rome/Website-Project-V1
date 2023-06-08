@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Logo from "/images/timber-hatchet-logo.png";
 import Image from "../Image";
@@ -91,9 +92,7 @@ function Navbar() {
           alt={"Timber & Hatchet Logo"}
         />
       </a>
-      <Button className="block xl:hidden"
-        onClick={handleMenuClick}
-      >
+      <Button className="block xl:hidden" onClick={handleMenuClick}>
         <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
       </Button>
       <ul className="hidden xl:flex items-center">
@@ -111,8 +110,14 @@ function Navbar() {
         <Button LogInButton>Log in</Button>
       </ul>
 
+      <AnimatePresence>
         {isMenuOpen && (
-          <ul className="xl:hidden bg-white absolute right-8 top-28 flex flex-col rounded gap-4 p-4">
+          <motion.ul
+            className="xl:hidden bg-white absolute right-8 top-28 flex flex-col rounded gap-4 p-4"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+          >
             {items.map(({ title, href }) => {
               return (
                 <NavItem
@@ -124,10 +129,9 @@ function Navbar() {
                 />
               );
             })}
-          </ul>
+          </motion.ul>
         )}
-
-
+      </AnimatePresence>
     </nav>
   );
 }
