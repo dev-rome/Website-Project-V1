@@ -75,7 +75,11 @@ function Navbar() {
 
   const handleImageClick = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (window.location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.location.href = "/";
+    }
   };
 
   const handleMenuClick = () => {
@@ -84,7 +88,7 @@ function Navbar() {
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full flex justify-between py-[0.625rem] xl:pl-3 pr-10 xl:pr-[4.375rem] bg-white/10 backdrop-filter backdrop-blur-sm">
-      <a href="#hero" onClick={handleImageClick}>
+      <a href="" onClick={handleImageClick}>
         <Image
           src={Logo}
           width={225}
