@@ -7,6 +7,7 @@ import Button from "../Button";
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const sectionOffsets = useRef({});
 
   const items = [
@@ -31,7 +32,10 @@ function Navbar() {
         const height = section.offsetHeight;
         const sectionTop = offset - 50;
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + height) {
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + height
+        ) {
           active = `#${section.id}`;
           break;
         }
@@ -65,11 +69,16 @@ function Navbar() {
         window.location.assign(newUrl);
       }
     }
+    setIsMenuOpen(false);
   };
 
   const handleImageClick = (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -82,7 +91,9 @@ function Navbar() {
           alt={"Timber & Hatchet Logo"}
         />
       </a>
-      <Button className="block xl:hidden">
+      <Button className="block xl:hidden"
+        onClick={handleMenuClick}
+      >
         <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
       </Button>
       <ul className="hidden xl:flex items-center">
@@ -99,6 +110,24 @@ function Navbar() {
         })}
         <Button LogInButton>Log in</Button>
       </ul>
+
+        {isMenuOpen && (
+          <ul className="xl:hidden bg-white absolute right-8 top-28 flex flex-col rounded gap-4 p-4">
+            {items.map(({ title, href }) => {
+              return (
+                <NavItem
+                  key={href}
+                  title={title}
+                  href={href}
+                  isActive={activeSection === href}
+                  onClick={handleClick}
+                />
+              );
+            })}
+          </ul>
+        )}
+
+
     </nav>
   );
 }
