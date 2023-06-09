@@ -1,55 +1,39 @@
-# Astro Starter Kit: Basics
+# Project Title
 
-```
-npm create astro@latest -- --template basics
-```
+Timber & Hatchet is a distinguished organization specializing in supplying professional nearshore engineering resources. The firm's primary mission is to facilitate businesses in achieving their strategic goals through substantial improvements and optimization of their software systems.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Screenshots
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.34.42%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.34.55%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.10%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.36.29%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.20%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.36.16%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.29%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.37%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.46%20PM.png)
+![App Screenshot](/public/images/Screenshot%202023-06-09%20at%206.35.54%20PM.png)
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Features
 
+- Slider to display company logos and company information
+- Smooth scroll to section
+- CLient and Testimonial section
+- Framer motion animations
+- Contatct form
+- Responsive Design
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- Astro - Astro is the all-in-one web framework designed for speed.
+- React - A statically typed superset of JavaScript
+- Tailwind CSS - A utility-first CSS framework
+- Framer motion - Framer Motion is a simple yet powerful motion library for React.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Stretch Goals
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Add TypeScript.
+- Users will be able to login
+- Users will be able to submit email
+- Refactor the code to follow the DRY (Don't Repeat Yourself) principle and ensure cleaner, more maintainable code.
