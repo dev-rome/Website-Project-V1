@@ -19,7 +19,7 @@ Timber & Hatchet is a distinguished organization specializing in supplying profe
 
 - Slider to display company logos and company information
 - Smooth scroll to section
-- CLient and Testimonial section
+- Client and Testimonial section
 - Framer motion animations
 - Contatct form
 - Responsive Design
