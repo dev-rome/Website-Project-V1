@@ -116,7 +116,7 @@ function Navbar() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.ul
-            className="xl:hidden bg-white absolute right-0 top-0 h-screen flex flex-col rounded gap-4 p-4"
+            className="xl:hidden bg-menu-gradient absolute right-0 top-0 h-screen flex flex-col rounded gap-4 p-4"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
