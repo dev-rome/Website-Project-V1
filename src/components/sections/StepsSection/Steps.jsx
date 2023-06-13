@@ -23,9 +23,9 @@ function Steps() {
           </h2>
         </div>
 
-        <div className="max-w-7xl mx-auto" ref={ref}>
+        <div className="max-w-7xl 2xl:max-w-[90rem] mx-auto" ref={ref}>
           {inView && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12 px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-4 mt-6 lg:mt-12">
               <StepOne />
               <StepTwo />
               <StepThree />
