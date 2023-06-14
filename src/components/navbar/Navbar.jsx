@@ -94,12 +94,11 @@ function Navbar() {
           className="w-48 h-14 md:w-56 md:h-16"
         />
       </a>
-      <Button
-        className="block xl:hidden bg-transparent"
+      <Icon
+        className="block xl:hidden text-3xl cursor-pointer self-center"
+        icon="icon-park-outline:hamburger-button"
         onClick={handleMenuClick}
-      >
-        <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
-      </Button>
+      />
       <ul className="hidden xl:flex items-center">
         {items.map(({ title, href }) => {
           return (
@@ -128,12 +127,12 @@ function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
           >
-            <Button
-              className="self-end bg-transparent"
+            <Icon
+              className="self-end text-4xl cursor-pointer"
+              icon="icon-park-outline:close-small"
               onClick={handleMenuClick}
-            >
-              <Icon className="text-4xl" icon="icon-park-outline:close-small" />
-            </Button>
+            />
+
             {items.map(({ title, href }) => {
               return (
                 <NavItem

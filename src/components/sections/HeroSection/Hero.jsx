@@ -28,12 +28,11 @@ function Hero() {
         </p>
       </div>
       <div className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <Button className="bg-transparent" onClick={handleClick}>
-          <Icon
-            className="text-5xl md:text-6xl text-white"
-            icon="ph:caret-down-light"
-          />
-        </Button>
+        <Icon
+          className="text-5xl md:text-6xl text-white cursor-pointer"
+          icon="ph:caret-down-light"
+          onClick={handleClick}
+        />
       </div>
       <div className="w-full absolute bottom-0 bg-[#96969612]">
         <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 items-center gap-x-2 pl-4 lg:pl-[3.25rem]">
