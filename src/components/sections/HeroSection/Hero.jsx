@@ -28,7 +28,7 @@ function Hero() {
         </p>
       </div>
       <div className="absolute top-3/4 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <Button onClick={handleClick}>
+        <Button className="bg-transparent" onClick={handleClick}>
           <Icon
             className="text-5xl md:text-6xl text-white"
             icon="ph:caret-down-light"

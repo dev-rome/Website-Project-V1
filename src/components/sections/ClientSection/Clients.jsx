@@ -79,7 +79,7 @@ function Clients() {
               className="custom-case-study-button flex w-[13rem] group"
               href={`/case-studies/${clients.slug}`}
             >
-              <Button className="flex items-center italic mt-8 lg:mt-14">
+              <Button className="flex items-center bg-transparent italic mt-8 lg:mt-14">
                 <span className="gradient-text mr-2">Read Full Case Study</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

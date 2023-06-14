@@ -87,15 +87,17 @@ function Navbar() {
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full flex justify-between py-[0.625rem] xl:pl-3 pr-10 xl:pr-[4.375rem] bg-white/10 backdrop-filter backdrop-blur-sm">
-      <a href="" onClick={handleImageClick}>
-        <Image
+      <a href="#" onClick={handleImageClick}>
+        <img
           src={Logo}
-          width={225}
-          height={80}
-          alt={"Timber & Hatchet Logo"}
+          alt="Timber & Hatchet Logo"
+          className="w-48 h-14 md:w-56 md:h-16"
         />
       </a>
-      <Button className="block xl:hidden" onClick={handleMenuClick}>
+      <Button
+        className="block xl:hidden bg-transparent"
+        onClick={handleMenuClick}
+      >
         <Icon className="text-3xl" icon="icon-park-outline:hamburger-button" />
       </Button>
       <ul className="hidden xl:flex items-center">
@@ -110,7 +112,12 @@ function Navbar() {
             />
           );
         })}
-        <Button LogInButton>Log in</Button>
+        <Button
+          type="dark"
+          className="font-semibold py-[1rem] px-[1.75rem] rounded-[0.313rem]"
+        >
+          Log in
+        </Button>
       </ul>
 
       <AnimatePresence>
@@ -121,7 +128,10 @@ function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
           >
-            <Button className="self-end" onClick={handleMenuClick}>
+            <Button
+              className="self-end bg-transparent"
+              onClick={handleMenuClick}
+            >
               <Icon className="text-4xl" icon="icon-park-outline:close-small" />
             </Button>
             {items.map(({ title, href }) => {

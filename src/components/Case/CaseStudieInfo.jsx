@@ -22,7 +22,7 @@ function CaseStudyInfo({ slug }) {
             <img className="w-44 order-2 sm:order-none" src={src} alt={alt} />
             <div className="flex items-center">
               <a className="custom-case-study-button group" href="/#clients">
-                <Button className="flex items-center italic">
+                <Button className="flex items-center italic bg-transparent">
                   <span className="gradient-text mr-2">
                     All Our Case Studies
                   </span>
