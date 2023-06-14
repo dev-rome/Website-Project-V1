@@ -1,17 +1,26 @@
-import className from "classnames";
+import PropTypes from "prop-types";
 
-function Button({ children, ReadMoreButton, LogInButton, ...rest }) {
-  const classes = className(rest.className, "font-roboto tracking-widest", {
-    "bg-black text-white font-semibold py-[1rem] px-[1.75rem] rounded-[0.313rem]": LogInButton,
-    "bg-white text-black py-3.5 px-[1.125rem] rounded-[0.375rem] drop-shadow-[0_5px_4px_rgba(0,0,0,0.25)]":
-      ReadMoreButton,
-  });
+const BUTTON_TYPE = {
+  DARK: "dark",
+  LIGHT: "light",
+};
+
+const Button = ({ type, children, className, ...rest }) => {
+  const buttonClassNames = `${
+    type === BUTTON_TYPE.DARK ? "bg-black text-white" : "bg-white text-black"
+  } font-roboto tracking-widest ${className}`;
 
   return (
-    <button {...rest} className={classes}>
+    <button className={buttonClassNames} {...rest}>
       {children}
     </button>
   );
-}
+};
+
+Button.propTypes = {
+  type: PropTypes.oneOf(Object.values(BUTTON_TYPE)),
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
 
 export default Button;
