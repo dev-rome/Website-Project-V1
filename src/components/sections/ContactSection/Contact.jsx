@@ -18,7 +18,7 @@ function Contact() {
 
   if (submitted) {
     return (
-      <SectionContainer className="min-h-screen flex justify-center items-center">
+      <SectionContainer className="min-h-screen flex justify-center items-center pt-20 md:pt-0">
         <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
           <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)] lg:mb-12">
             Thank You!
@@ -50,7 +50,7 @@ function Contact() {
 
   return (
     <SectionContainer
-      className="min-h-screen flex justify-center items-center"
+      className="min-h-screen flex justify-center items-center pt-20 md:pt-0"
       id="contact"
     >
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">

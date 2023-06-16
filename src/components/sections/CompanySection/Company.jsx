@@ -31,13 +31,13 @@ function Company() {
   }, []);
 
   return (
-    <SectionContainer className="min-h-screen flex items-center" id="company">
+    <SectionContainer className="min-h-screen flex items-center pt-16 md:pt-0" id="company">
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Crafting tailored teams for your business needs
         </h2>
         <div className="grid md:grid-cols-8 lg:grid-cols-11 md:mt-8 lg:mt-0">
-          <div className="md:col-span-4 lg:col-span-6 md:border-r-4 md:border-black md:pr-8 md:mt-4 lg:mt-16">
+          <div className="md:col-span-4 lg:col-span-7 md:border-r-4 md:border-black md:pr-8 md:mt-4 lg:mt-16">
             <p className="font-roboto 2xl:text-lg mt-7">
               We help businesses like yours achieve their goals through software
               improvements. We support the strategic implementation of software

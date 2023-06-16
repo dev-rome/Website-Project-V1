@@ -16,7 +16,7 @@ function About() {
 
   return (
     <SectionContainer
-      className="min-h-screen flex justify-center items-center"
+      className="min-h-screen flex justify-center items-center pt-20 md:pt-0"
       id="about"
     >
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">

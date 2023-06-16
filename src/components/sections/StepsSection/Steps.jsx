@@ -13,7 +13,7 @@ function Steps() {
 
   return (
     <SectionContainer
-      className="min-h-screen flex flex-col justify-center"
+      className="min-h-screen flex flex-col justify-center pt-20 md:pt-0"
       id="steps"
     >
       <div className="px-4">
