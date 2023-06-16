@@ -31,7 +31,7 @@ function Company() {
   }, []);
 
   return (
-    <SectionContainer className="min-h-screen flex items-center pt-16 md:pt-0" id="company">
+    <SectionContainer className="min-h-screen flex items-center pt-20 md:pt-0" id="company">
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Crafting tailored teams for your business needs
