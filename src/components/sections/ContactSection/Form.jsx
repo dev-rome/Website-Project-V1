@@ -55,7 +55,7 @@ function Form({ onSubmit }) {
         value={formData.message}
         onChange={handleChange}
       ></textarea>
-      <Button className="custom-form-button custom-form-submit-button" type="submit">
+      <Button className="custom-form-button custom-form-submit-button">
         Submit
       </Button>
     </form>
