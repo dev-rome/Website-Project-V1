@@ -18,7 +18,7 @@ function Steps() {
     >
       <div className="px-4">
         <div className="max-w-5xl 2xl:max-w-6xl mx-auto">
-          <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
+          <h2 className="font-zwodrei font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
             Find your perfect match
           </h2>
         </div>

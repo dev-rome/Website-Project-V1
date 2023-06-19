@@ -19,11 +19,11 @@ function Clients() {
 
   return (
     <SectionContainer
-      className="min-h-screen flex flex-col justify-center items-center pt-20 md:pt-0 py-24"
+      className="min-h-screen flex flex-col justify-center items-center py-24"
       id="clients"
     >
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
-        <h2 className="font-zwodrei font-bold text-2xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
+        <h2 className="font-zwodrei font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Working with great leaders
         </h2>
         <div className="grid md:grid-cols-5 lg:grid-cols-11 mt-6 lg:mt-12">
