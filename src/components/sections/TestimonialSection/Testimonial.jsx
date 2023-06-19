@@ -25,7 +25,7 @@ function Testimonial() {
   );
 
   return (
-    <div className="max-w-5xl 2xl:max-w-6xl mx-auto pt-24 lg:pt-28 px-4 lg:px-0">
+    <div className="max-w-5xl 2xl:max-w-6xl mx-auto pt-24 lg:pt-28 px-4 xl:px-0">
       <h2 className="font-zwodrei font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
         In their words...
       </h2>
