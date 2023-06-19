@@ -19,7 +19,7 @@ function Clients() {
 
   return (
     <SectionContainer
-      className="min-h-screen flex flex-col justify-center items-center py-24"
+      className="min-h-screen flex flex-col justify-center items-center pt-20"
       id="clients"
     >
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
