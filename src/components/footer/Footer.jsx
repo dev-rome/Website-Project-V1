@@ -6,15 +6,15 @@ import FooterContact from "./FooterContact";
 
 function Footer() {
   const items = [
-    { text: "Site Map", classname: "font-roboto text-sm md:text-base" },
-    { text: "Accessibility", classname: "font-roboto text-sm md:text-base" },
+    { text: "Site Map", classname: "font-roboto text-sm" },
+    { text: "Accessibility", classname: "font-roboto text-sm" },
     {
       text: "Terms & conditions",
-      classname: "font-roboto md:text-white text-sm md:text-base",
+      classname: "font-roboto lg:text-white text-sm",
     },
     {
       text: "Privacy Policy",
-      classname: "font-roboto md:text-white text-sm md:text-base",
+      classname: "font-roboto lg:text-white text-sm",
     },
   ];
 
@@ -41,11 +41,11 @@ function Footer() {
         </div>
       </div>
       <div className="relative grid lg:col-start-12 items-center lg:mt-6 px-4 lg:px-6 pb-2">
-        <div className="flex flex-col sm:flex-col md:flex-row md:justify-between">
-          <p className="font-roboto text-black text-sm md:text-base mt-4">
+        <div className="flex flex-col md:flex-col lg:flex-row md:justify-between">
+          <p className="font-roboto text-black text-sm mt-4">
             © 2023 Timber and Hatchet LLC.
           </p>
-          <ul className="flex flex-col md:flex-row lg:col-start-9 lg:justify-between gap-5 md:gap-16 mt-4">
+          <ul className="flex flex-col lg:flex-row lg:col-start-9 lg:justify-between gap-5 lg:gap-20 mt-4">
             {items.map(({ text, classname }) => (
               <li key={text} className={classname}>
                 {text}
