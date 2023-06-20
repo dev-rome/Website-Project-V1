@@ -18,10 +18,7 @@ function Clients() {
   const clients = isActive === "clientOne" ? clientOne : clientTwo;
 
   return (
-    <SectionContainer
-      className="min-h-screen flex flex-col justify-center items-center pt-20"
-      id="clients"
-    >
+    <SectionContainer className="py-20 md:py-28" id="clients">
       <div className="max-w-5xl 2xl:max-w-6xl mx-auto px-4">
         <h2 className="font-zwodrei font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Working with great leaders
@@ -51,7 +48,10 @@ function Clients() {
               <div className="col-start-4 col-span-3 md:col-start-4 lg:col-start-5">
                 <ul>
                   {clients.augmentations.map((augmentation) => (
-                    <li key={augmentation} className="font-roboto text-lg 2xl:text-xl">
+                    <li
+                      key={augmentation}
+                      className="font-roboto text-lg 2xl:text-xl"
+                    >
                       {augmentation}
                     </li>
                   ))}
@@ -62,13 +62,18 @@ function Clients() {
               <p className="font-roboto text-lg 2xl:text-xl lg:mt-7">Problem</p>
               <div className="mt-4">
                 <p className="font-roboto 2xl:text-lg">{clients.problem}</p>
-                <p className="font-roboto 2xl:text-lg mt-4 lg:mt-6">{clients.goal}</p>
+                <p className="font-roboto 2xl:text-lg mt-4 lg:mt-6">
+                  {clients.goal}
+                </p>
               </div>
               <div className="mt-6">
                 <p className="font-roboto 2xl:text-lg">{clients.offer}</p>
                 <ul className="mt-4 lg:mt-6 pl-4 lg:pl-6">
                   {clients.benefits.map((benefit) => (
-                    <li key={benefit} className="list-disc font-roboto 2xl:text-lg">
+                    <li
+                      key={benefit}
+                      className="list-disc font-roboto 2xl:text-lg"
+                    >
                       {benefit}
                     </li>
                   ))}
