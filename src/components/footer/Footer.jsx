@@ -25,9 +25,9 @@ function Footer() {
         src={Tree}
         alt="Trees"
       />
-      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 items-center sm:gap-y-3 sm:gap-x-6 md:gap-x-8 lg:gap-y-3 lg:gap-x-10 lg:mt-6 px-4 lg:px-6 pb-2">
-        <div className="col-span-1 md:col-span-2">
-          <img src={Logo} alt="Timber & Hatchet" className="w-60 mx-auto" />
+      <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 place-items-start sm:gap-y-3 sm:gap-x-6 md:gap-x-8 lg:gap-y-3 lg:gap-x-10 lg:mt-6 px-4 lg:px-6 pb-2">
+        <div className="col-span-2 sm:col-span-1 md:col-span-2">
+          <img src={Logo} alt="Timber & Hatchet" className="w-44" />
           <p className="font-zwodrei font-bold text-sm sm:text-lg md:text-lg text-center">
             Built in Boston
           </p>
