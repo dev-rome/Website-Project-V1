@@ -5,9 +5,9 @@ const BUTTON_TYPE = {
   LIGHT: "light",
 };
 
-const Button = ({ type, children, className, ...rest }) => {
+const Button = ({ buttonType, children, className, ...rest }) => {
   const buttonClassNames = `${
-    type === BUTTON_TYPE.DARK ? "bg-black text-white" : "bg-white text-black"
+    buttonType === BUTTON_TYPE.DARK ? "bg-black text-white" : "bg-white text-black"
   } font-roboto tracking-widest ${className}`;
 
   return (
@@ -18,7 +18,7 @@ const Button = ({ type, children, className, ...rest }) => {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(Object.values(BUTTON_TYPE)),
+  buttonType: PropTypes.oneOf(Object.values(BUTTON_TYPE)),
   children: PropTypes.node,
   className: PropTypes.string,
 };
