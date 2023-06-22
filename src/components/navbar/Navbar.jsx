@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Logo from "/images/timber-hatchet-logo.png";
-import Image from "../Image";
 import NavItem from "./NavItem";
 import Button from "../Button";
 
@@ -112,7 +111,7 @@ function Navbar() {
           );
         })}
         <Button
-          type="dark"
+          buttonType="dark"
           className="font-semibold py-[1rem] px-[1.75rem] rounded-[0.313rem]"
         >
           Log in
