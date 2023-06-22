@@ -14,7 +14,7 @@ function TestimonialItem({ testimonial, onOpen }) {
       </div>
       <p className="font-roboto 2xl:text-lg my-6 lg:mt-12 lg:mb-8">{description}</p>
       <div className="flex justify-center">
-        <Button type="light" className="py-3.5 px-[1.125rem] rounded-[0.375rem] drop-shadow-[0_5px_4px_rgba(0,0,0,0.25)]" onClick={onOpen}>
+        <Button buttonType="light" className="py-3.5 px-[1.125rem] rounded-[0.375rem] drop-shadow-[0_5px_4px_rgba(0,0,0,0.25)]" onClick={onOpen}>
           Read More
         </Button>
       </div>
