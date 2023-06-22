@@ -27,7 +27,7 @@ function Footer() {
       />
       <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 items-center sm:gap-y-3 sm:gap-x-6 md:gap-x-8 lg:gap-y-3 lg:gap-x-10 lg:mt-6 px-4 lg:px-6 pb-2">
         <div className="col-span-1 md:col-span-2">
-          <img src={Logo} alt="Timber & Hatchet" />
+          <img src={Logo} alt="Timber & Hatchet" className="w-40 mx-auto" />
           <p className="font-zwodrei font-bold text-base sm:text-lg md:text-lg text-center">
             Built in Boston
           </p>
