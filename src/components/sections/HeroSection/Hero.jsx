@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import SectionContainer from "../../SectionContainer";
 import CompositeBackground from "./CompositeBackground";
 import LogoCarousel from "./LogoCarousel";
-import Button from "../../Button";
 
 function Hero() {
   const handleClick = (e) => {

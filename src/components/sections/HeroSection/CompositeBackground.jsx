@@ -10,7 +10,7 @@ function CompositeBackground() {
     <div>
       <div className="absolute inset-0 bg-hero-background bg-no-repeat bg-cover bg-center bg-blend-multiply"></div>
       <div className="absolute right-0 bottom-0 opacity-80">
-        <img className="w-64 md:w-80 lg:w-96" src={Tech} alt="Tech Pattern" />
+        <img className="w-64 md:w-80 lg:w-96 2xl:w-[27rem]" src={Tech} alt="Tech Pattern" />
       </div>
       <div className="absolute left-0 bottom-0 opacity-40">
         <img className="w-80 2xl:w-[25.938rem]" src={TreeOne} alt="Trees" />
