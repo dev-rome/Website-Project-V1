@@ -27,7 +27,7 @@ module.exports = {
         "button-gradient":
           "linear-gradient(90deg, rgba(170, 204, 223, 0.83) 0%, rgba(155, 194, 216, 0.6) 30.25%, rgba(162, 226, 196, 0.61) 66.89%, #B9E1CE 100%)",
           "menu-gradient":
-          "linear-gradient(0deg, #8FBCB2 0%, #8FBCB2 100%)",
+          "linear-gradient(0deg, rgba(63, 106, 96, 1) 0%, rgba(63, 106, 96, 1) 100%)",
       },
     },
   },
