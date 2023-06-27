@@ -140,6 +140,7 @@ function Navbar() {
                   href={href}
                   isActive={activeSection === href}
                   onClick={handleClick}
+                  customClasses="text-white"
                 />
               );
             })}

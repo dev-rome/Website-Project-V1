@@ -1,11 +1,11 @@
-function NavItem({ onClick, title, href, isActive }) {
+function NavItem({ onClick, title, href, isActive, customClasses }) {
   return (
-    <li className="mr-[4.375rem] last-of-type:mr-[3.125rem]">
+    <li className={`mr-[4.375rem] last-of-type:mr-[3.125rem] ${customClasses}`}>
       <a
         href={href}
         className={`tracking-widest font-roboto font-semibold hover:bg-hover-gradient hover:bg-clip-text hover:text-transparent ${
           isActive ? "bg-hover-gradient bg-clip-text text-transparent" : ""
-        }`}
+        } `}
         onClick={onClick}
       >
         {title}
