@@ -36,7 +36,7 @@ function Company() {
         <h2 className="font-zwodrei font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-[rgba(0,0,0,0.8)]">
           Crafting tailored teams for your business needs
         </h2>
-        <div className="grid md:grid-cols-8 lg:grid-cols-11 md:mt-8 lg:mt-0">
+        <div className="grid md:grid-cols-7 lg:grid-cols-11 md:mt-8 lg:mt-0">
           <div className="md:col-span-4 lg:col-span-6 md:border-r-4 md:border-black md:pr-8 md:mt-4 lg:mt-16">
             <p className="font-roboto 2xl:text-lg mt-7">
               We help businesses like yours achieve their goals through software
